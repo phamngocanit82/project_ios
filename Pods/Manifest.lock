@@ -1,24 +1,32 @@
 PODS:
   - AESCrypt (0.0.1)
   - Alamofire (5.6.4)
-  - CryptoSwift (1.4.0)
+  - CryptoSwift (1.6.0)
+  - GDataXML-HTML (1.4.1)
   - NSHash (1.2.0)
   - NVActivityIndicatorView (5.1.1):
     - NVActivityIndicatorView/Base (= 5.1.1)
   - NVActivityIndicatorView/Base (5.1.1)
-  - SDWebImage (5.11.1):
-    - SDWebImage/Core (= 5.11.1)
-  - SDWebImage/Core (5.11.1)
-  - SSZipArchive (2.2.3)
+  - SDWebImage (5.14.2):
+    - SDWebImage/Core (= 5.14.2)
+  - SDWebImage/Core (5.14.2)
+  - SQLCipher (4.5.2):
+    - SQLCipher/standard (= 4.5.2)
+  - SQLCipher/common (4.5.2)
+  - SQLCipher/standard (4.5.2):
+    - SQLCipher/common
+  - SSZipArchive (2.5.2)
   - TouchJSON (1.1)
 
 DEPENDENCIES:
   - AESCrypt
   - Alamofire
   - CryptoSwift
+  - GDataXML-HTML
   - NSHash
   - NVActivityIndicatorView
   - SDWebImage
+  - SQLCipher
   - SSZipArchive
   - TouchJSON
 
@@ -27,22 +35,26 @@ SPEC REPOS:
     - AESCrypt
     - Alamofire
     - CryptoSwift
+    - GDataXML-HTML
     - NSHash
     - NVActivityIndicatorView
     - SDWebImage
+    - SQLCipher
     - SSZipArchive
     - TouchJSON
 
 SPEC CHECKSUMS:
   AESCrypt: 1d89bf8b0789cf274ab2205ea461adbe9321d5f8
   Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
-  CryptoSwift: 7cc902df1784de3b389a387756c7d710f197730c
+  CryptoSwift: 562f8eceb40e80796fffc668b0cad9313284cfa6
+  GDataXML-HTML: a4f11079b48d9fe96ff1fe478943a317185227e2
   NSHash: 036c03781d372c288d332b512b203e7bb832e46e
   NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
-  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
-  SSZipArchive: 62d4947b08730e4cda640473b0066d209ff033c9
+  SDWebImage: b9a731e1d6307f44ca703b3976d18c24ca561e84
+  SQLCipher: f5b4857434158b571a3ed3b10b3b43cd18ef5f67
+  SSZipArchive: 155943602f0dd5ca75464bcb77e57a0bf33144a5
   TouchJSON: 39be3595ebe489095311d97ce0c824417324cb74
 
-PODFILE CHECKSUM: 4463c7cfdbee01f39c474b1441e45e8e36a670b1
+PODFILE CHECKSUM: b51164a58d03eb6aed7bbfd71874685559b35eff
 
 COCOAPODS: 1.11.3
