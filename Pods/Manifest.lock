@@ -2,6 +2,7 @@ PODS:
   - AESCrypt (0.0.1)
   - Alamofire (5.6.4)
   - CryptoSwift (1.6.0)
+  - DGActivityIndicatorView (2.1.1)
   - GDataXML-HTML (1.4.1)
   - NSHash (1.2.0)
   - NVActivityIndicatorView (5.1.1):
@@ -22,6 +23,7 @@ DEPENDENCIES:
   - AESCrypt
   - Alamofire
   - CryptoSwift
+  - DGActivityIndicatorView
   - GDataXML-HTML
   - NSHash
   - NVActivityIndicatorView
@@ -35,6 +37,7 @@ SPEC REPOS:
     - AESCrypt
     - Alamofire
     - CryptoSwift
+    - DGActivityIndicatorView
     - GDataXML-HTML
     - NSHash
     - NVActivityIndicatorView
@@ -47,6 +50,7 @@ SPEC CHECKSUMS:
   AESCrypt: 1d89bf8b0789cf274ab2205ea461adbe9321d5f8
   Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
   CryptoSwift: 562f8eceb40e80796fffc668b0cad9313284cfa6
+  DGActivityIndicatorView: ff2c76073d79692f724863c8dd38685866a03cb6
   GDataXML-HTML: a4f11079b48d9fe96ff1fe478943a317185227e2
   NSHash: 036c03781d372c288d332b512b203e7bb832e46e
   NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
@@ -55,6 +59,6 @@ SPEC CHECKSUMS:
   SSZipArchive: 155943602f0dd5ca75464bcb77e57a0bf33144a5
   TouchJSON: 39be3595ebe489095311d97ce0c824417324cb74
 
-PODFILE CHECKSUM: 17a5ccddeb090cab964f8beb5f040ec059a997ab
+PODFILE CHECKSUM: 4034a4f6eac647b9147b7285dcb3a3cf54073181
 
 COCOAPODS: 1.11.3

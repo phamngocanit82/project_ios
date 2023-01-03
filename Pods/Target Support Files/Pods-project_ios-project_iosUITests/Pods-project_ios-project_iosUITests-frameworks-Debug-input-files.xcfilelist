@@ -2,6 +2,7 @@ ${PODS_ROOT}/Target Support Files/Pods-project_ios-project_iosUITests/Pods-proje
 ${BUILT_PRODUCTS_DIR}/AESCrypt/AESCrypt.framework
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
 ${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework
+${BUILT_PRODUCTS_DIR}/DGActivityIndicatorView/DGActivityIndicatorView.framework
 ${BUILT_PRODUCTS_DIR}/GDataXML-HTML/GDataXML_HTML.framework
 ${BUILT_PRODUCTS_DIR}/NSHash/NSHash.framework
 ${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework

@@ -31,17 +31,42 @@
 		A148DAB0296196D100C28DB3 /* ConnectService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A148DAAF296196D100C28DB3 /* ConnectService.swift */; };
 		A148DAB22961981E00C28DB3 /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A148DAB12961981E00C28DB3 /* DownloadService.swift */; };
 		A148DAB42961983600C28DB3 /* LanguageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A148DAB32961983600C28DB3 /* LanguageService.swift */; };
-		A1614070296417A200551492 /* HelpersSqlite.m in Sources */ = {isa = PBXBuildFile; fileRef = A161406D296417A100551492 /* HelpersSqlite.m */; };
-		A1614071296417A200551492 /* HelpersPlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = A161406F296417A100551492 /* HelpersPlatform.m */; };
-		A1614074296418B900551492 /* HelpersUserDefined.m in Sources */ = {isa = PBXBuildFile; fileRef = A1614072296418B900551492 /* HelpersUserDefined.m */; };
-		A161407929641AF400551492 /* HelpersCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = A161407529641AF300551492 /* HelpersCoreData.m */; };
-		A161407A29641AF400551492 /* HelpersCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = A161407729641AF300551492 /* HelpersCamera.m */; };
-		A161407D29641B2F00551492 /* HelpersLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = A161407B29641B2F00551492 /* HelpersLanguage.m */; };
-		A161408029641DAE00551492 /* HelpersCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A161407F29641DAE00551492 /* HelpersCache.m */; };
-		A161408329641DEA00551492 /* HelpersJson.m in Sources */ = {isa = PBXBuildFile; fileRef = A161408129641DEA00551492 /* HelpersJson.m */; };
+		A1614070296417A200551492 /* CTHSqlite.m in Sources */ = {isa = PBXBuildFile; fileRef = A161406D296417A100551492 /* CTHSqlite.m */; };
+		A1614071296417A200551492 /* CTHPlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = A161406F296417A100551492 /* CTHPlatform.m */; };
+		A1614074296418B900551492 /* CTHUserDefined.m in Sources */ = {isa = PBXBuildFile; fileRef = A1614072296418B900551492 /* CTHUserDefined.m */; };
+		A161407929641AF400551492 /* CTHCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = A161407529641AF300551492 /* CTHCoreData.m */; };
+		A161407A29641AF400551492 /* CTHCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = A161407729641AF300551492 /* CTHCamera.m */; };
+		A161407D29641B2F00551492 /* CTHLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = A161407B29641B2F00551492 /* CTHLanguage.m */; };
+		A161408029641DAE00551492 /* CTHCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A161407F29641DAE00551492 /* CTHCache.m */; };
+		A161408329641DEA00551492 /* CTHJson.m in Sources */ = {isa = PBXBuildFile; fileRef = A161408129641DEA00551492 /* CTHJson.m */; };
 		A161408829641E5100551492 /* PDKeychainBindings.m in Sources */ = {isa = PBXBuildFile; fileRef = A161408429641E5100551492 /* PDKeychainBindings.m */; };
 		A161408929641E5100551492 /* PDKeychainBindingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = A161408629641E5100551492 /* PDKeychainBindingsController.m */; };
-		A161408C29641F9F00551492 /* HelpersDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = A161408B29641F9F00551492 /* HelpersDownload.m */; };
+		A161408C29641F9F00551492 /* CTHDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = A161408B29641F9F00551492 /* CTHDownload.m */; };
+		A16140972964269400551492 /* CTHConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = A16140902964269300551492 /* CTHConnection.m */; };
+		A16140992964269400551492 /* CTHBaseConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = A16140922964269300551492 /* CTHBaseConnection.m */; };
+		A161409A2964269400551492 /* CTHBaseApi.m in Sources */ = {isa = PBXBuildFile; fileRef = A16140942964269400551492 /* CTHBaseApi.m */; };
+		A161409D2964288E00551492 /* CTHDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = A161409B2964288E00551492 /* CTHDialog.m */; };
+		A16140C829642A1E00551492 /* CTCSlideIndicate.m in Sources */ = {isa = PBXBuildFile; fileRef = A16140A829642A1C00551492 /* CTCSlideIndicate.m */; };
+		A16140C929642A1E00551492 /* CTCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A16140AB29642A1C00551492 /* CTCButton.m */; };
+		A16140CA29642A1E00551492 /* CTCPageDot.m in Sources */ = {isa = PBXBuildFile; fileRef = A16140AE29642A1C00551492 /* CTCPageDot.m */; };
+		A16140CB29642A1E00551492 /* CTCProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A16140B029642A1D00551492 /* CTCProgressBar.m */; };
+		A16140CC29642A1E00551492 /* CTCImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A16140B129642A1D00551492 /* CTCImageView.m */; };
+		A16140CD29642A1E00551492 /* CTCSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = A16140B229642A1D00551492 /* CTCSwitch.m */; };
+		A16140CE29642A1E00551492 /* CTCTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A16140B429642A1D00551492 /* CTCTextField.m */; };
+		A16140CF29642A1E00551492 /* CTCSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = A16140B729642A1D00551492 /* CTCSlider.m */; };
+		A16140D029642A1E00551492 /* CTCLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = A16140BA29642A1D00551492 /* CTCLineChart.m */; };
+		A16140D129642A1E00551492 /* CTCVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = A16140BB29642A1D00551492 /* CTCVideo.m */; };
+		A16140D229642A1E00551492 /* CTCArcChart.m in Sources */ = {isa = PBXBuildFile; fileRef = A16140BD29642A1D00551492 /* CTCArcChart.m */; };
+		A16140D329642A1E00551492 /* CTCLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = A16140BE29642A1D00551492 /* CTCLabel.m */; };
+		A16140D429642A1E00551492 /* CTCDepthScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A16140BF29642A1D00551492 /* CTCDepthScrollView.m */; };
+		A16140D529642A1E00551492 /* CTCWKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = A16140C229642A1E00551492 /* CTCWKWebView.m */; };
+		A16140D629642A1E00551492 /* CTCCircleChart.m in Sources */ = {isa = PBXBuildFile; fileRef = A16140C329642A1E00551492 /* CTCCircleChart.m */; };
+		A16140D729642A1E00551492 /* CTCView.m in Sources */ = {isa = PBXBuildFile; fileRef = A16140C629642A1E00551492 /* CTCView.m */; };
+		A16140DA29642B0700551492 /* CTHHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A16140D929642B0700551492 /* CTHHelper.m */; };
+		A16140DC29642B3900551492 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16140DB29642B3800551492 /* CoreMedia.framework */; };
+		A16140DF29642B6100551492 /* CTHFont.m in Sources */ = {isa = PBXBuildFile; fileRef = A16140DE29642B6100551492 /* CTHFont.m */; };
+		A16140E229642BBF00551492 /* RadialGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = A16140E129642BBF00551492 /* RadialGradientView.m */; };
+		A16140E529642EBC00551492 /* CTHDGActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = A16140E329642EBB00551492 /* CTHDGActivityIndicator.m */; };
 		A193340E29613705000FD966 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A193340D29613704000FD966 /* CoreData.framework */; };
 		A19334102961454D000FD966 /* UtilsValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A193340F2961454D000FD966 /* UtilsValidation.swift */; };
 		A1933412296146E3000FD966 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1933411296146E3000FD966 /* Global.swift */; };
@@ -109,29 +134,78 @@
 		A148DAAF296196D100C28DB3 /* ConnectService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectService.swift; sourceTree = "<group>"; };
 		A148DAB12961981E00C28DB3 /* DownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
 		A148DAB32961983600C28DB3 /* LanguageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageService.swift; sourceTree = "<group>"; };
-		A161406C296417A100551492 /* HelpersPlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpersPlatform.h; sourceTree = "<group>"; };
-		A161406D296417A100551492 /* HelpersSqlite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpersSqlite.m; sourceTree = "<group>"; };
-		A161406E296417A100551492 /* HelpersSqlite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpersSqlite.h; sourceTree = "<group>"; };
-		A161406F296417A100551492 /* HelpersPlatform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpersPlatform.m; sourceTree = "<group>"; };
-		A1614072296418B900551492 /* HelpersUserDefined.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpersUserDefined.m; sourceTree = "<group>"; };
-		A1614073296418B900551492 /* HelpersUserDefined.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpersUserDefined.h; sourceTree = "<group>"; };
-		A161407529641AF300551492 /* HelpersCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpersCoreData.m; sourceTree = "<group>"; };
-		A161407629641AF300551492 /* HelpersCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpersCamera.h; sourceTree = "<group>"; };
-		A161407729641AF300551492 /* HelpersCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpersCamera.m; sourceTree = "<group>"; };
-		A161407829641AF300551492 /* HelpersCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpersCoreData.h; sourceTree = "<group>"; };
-		A161407B29641B2F00551492 /* HelpersLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpersLanguage.m; sourceTree = "<group>"; };
-		A161407C29641B2F00551492 /* HelpersLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpersLanguage.h; sourceTree = "<group>"; };
-		A161407E29641DAE00551492 /* HelpersCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpersCache.h; sourceTree = "<group>"; };
-		A161407F29641DAE00551492 /* HelpersCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpersCache.m; sourceTree = "<group>"; };
-		A161408129641DEA00551492 /* HelpersJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpersJson.m; sourceTree = "<group>"; };
-		A161408229641DEA00551492 /* HelpersJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpersJson.h; sourceTree = "<group>"; };
+		A161406C296417A100551492 /* CTHPlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHPlatform.h; sourceTree = "<group>"; };
+		A161406D296417A100551492 /* CTHSqlite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHSqlite.m; sourceTree = "<group>"; };
+		A161406E296417A100551492 /* CTHSqlite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHSqlite.h; sourceTree = "<group>"; };
+		A161406F296417A100551492 /* CTHPlatform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHPlatform.m; sourceTree = "<group>"; };
+		A1614072296418B900551492 /* CTHUserDefined.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHUserDefined.m; sourceTree = "<group>"; };
+		A1614073296418B900551492 /* CTHUserDefined.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHUserDefined.h; sourceTree = "<group>"; };
+		A161407529641AF300551492 /* CTHCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHCoreData.m; sourceTree = "<group>"; };
+		A161407629641AF300551492 /* CTHCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHCamera.h; sourceTree = "<group>"; };
+		A161407729641AF300551492 /* CTHCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHCamera.m; sourceTree = "<group>"; };
+		A161407829641AF300551492 /* CTHCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHCoreData.h; sourceTree = "<group>"; };
+		A161407B29641B2F00551492 /* CTHLanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHLanguage.m; sourceTree = "<group>"; };
+		A161407C29641B2F00551492 /* CTHLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHLanguage.h; sourceTree = "<group>"; };
+		A161407E29641DAE00551492 /* CTHCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHCache.h; sourceTree = "<group>"; };
+		A161407F29641DAE00551492 /* CTHCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHCache.m; sourceTree = "<group>"; };
+		A161408129641DEA00551492 /* CTHJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHJson.m; sourceTree = "<group>"; };
+		A161408229641DEA00551492 /* CTHJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHJson.h; sourceTree = "<group>"; };
 		A161408429641E5100551492 /* PDKeychainBindings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDKeychainBindings.m; sourceTree = "<group>"; };
 		A161408529641E5100551492 /* PDKeychainBindingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDKeychainBindingsController.h; sourceTree = "<group>"; };
 		A161408629641E5100551492 /* PDKeychainBindingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDKeychainBindingsController.m; sourceTree = "<group>"; };
 		A161408729641E5100551492 /* PDKeychainBindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDKeychainBindings.h; sourceTree = "<group>"; };
-		A161408A29641F9F00551492 /* HelpersDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpersDownload.h; sourceTree = "<group>"; };
-		A161408B29641F9F00551492 /* HelpersDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpersDownload.m; sourceTree = "<group>"; };
+		A161408A29641F9F00551492 /* CTHDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHDownload.h; sourceTree = "<group>"; };
+		A161408B29641F9F00551492 /* CTHDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHDownload.m; sourceTree = "<group>"; };
 		A161408E29641FFB00551492 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		A161408F2964269300551492 /* CTHBaseApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHBaseApi.h; sourceTree = "<group>"; };
+		A16140902964269300551492 /* CTHConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHConnection.m; sourceTree = "<group>"; };
+		A16140922964269300551492 /* CTHBaseConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHBaseConnection.m; sourceTree = "<group>"; };
+		A16140942964269400551492 /* CTHBaseApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHBaseApi.m; sourceTree = "<group>"; };
+		A16140952964269400551492 /* CTHBaseConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHBaseConnection.h; sourceTree = "<group>"; };
+		A16140962964269400551492 /* CTHConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHConnection.h; sourceTree = "<group>"; };
+		A161409B2964288E00551492 /* CTHDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHDialog.m; sourceTree = "<group>"; };
+		A161409C2964288E00551492 /* CTHDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHDialog.h; sourceTree = "<group>"; };
+		A16140A829642A1C00551492 /* CTCSlideIndicate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCSlideIndicate.m; sourceTree = "<group>"; };
+		A16140A929642A1C00551492 /* CTCImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCImageView.h; sourceTree = "<group>"; };
+		A16140AA29642A1C00551492 /* CTCSlideIndicate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCSlideIndicate.h; sourceTree = "<group>"; };
+		A16140AB29642A1C00551492 /* CTCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCButton.m; sourceTree = "<group>"; };
+		A16140AC29642A1C00551492 /* CTCPageDot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCPageDot.h; sourceTree = "<group>"; };
+		A16140AD29642A1C00551492 /* CTCSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCSlider.h; sourceTree = "<group>"; };
+		A16140AE29642A1C00551492 /* CTCPageDot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCPageDot.m; sourceTree = "<group>"; };
+		A16140AF29642A1D00551492 /* CTCView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCView.h; sourceTree = "<group>"; };
+		A16140B029642A1D00551492 /* CTCProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCProgressBar.m; sourceTree = "<group>"; };
+		A16140B129642A1D00551492 /* CTCImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCImageView.m; sourceTree = "<group>"; };
+		A16140B229642A1D00551492 /* CTCSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCSwitch.m; sourceTree = "<group>"; };
+		A16140B329642A1D00551492 /* CTCWKWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCWKWebView.h; sourceTree = "<group>"; };
+		A16140B429642A1D00551492 /* CTCTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCTextField.m; sourceTree = "<group>"; };
+		A16140B529642A1D00551492 /* CTCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCButton.h; sourceTree = "<group>"; };
+		A16140B629642A1D00551492 /* CTCCircleChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCCircleChart.h; sourceTree = "<group>"; };
+		A16140B729642A1D00551492 /* CTCSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCSlider.m; sourceTree = "<group>"; };
+		A16140B829642A1D00551492 /* CTCTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCTextField.h; sourceTree = "<group>"; };
+		A16140B929642A1D00551492 /* CTCSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCSwitch.h; sourceTree = "<group>"; };
+		A16140BA29642A1D00551492 /* CTCLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCLineChart.m; sourceTree = "<group>"; };
+		A16140BB29642A1D00551492 /* CTCVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCVideo.m; sourceTree = "<group>"; };
+		A16140BC29642A1D00551492 /* CTCLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCLineChart.h; sourceTree = "<group>"; };
+		A16140BD29642A1D00551492 /* CTCArcChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCArcChart.m; sourceTree = "<group>"; };
+		A16140BE29642A1D00551492 /* CTCLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCLabel.m; sourceTree = "<group>"; };
+		A16140BF29642A1D00551492 /* CTCDepthScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCDepthScrollView.m; sourceTree = "<group>"; };
+		A16140C029642A1D00551492 /* CTCDepthScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCDepthScrollView.h; sourceTree = "<group>"; };
+		A16140C129642A1E00551492 /* CTCArcChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCArcChart.h; sourceTree = "<group>"; };
+		A16140C229642A1E00551492 /* CTCWKWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCWKWebView.m; sourceTree = "<group>"; };
+		A16140C329642A1E00551492 /* CTCCircleChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCCircleChart.m; sourceTree = "<group>"; };
+		A16140C429642A1E00551492 /* CTCVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCVideo.h; sourceTree = "<group>"; };
+		A16140C529642A1E00551492 /* CTCProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCProgressBar.h; sourceTree = "<group>"; };
+		A16140C629642A1E00551492 /* CTCView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCView.m; sourceTree = "<group>"; };
+		A16140C729642A1E00551492 /* CTCLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCLabel.h; sourceTree = "<group>"; };
+		A16140D829642B0700551492 /* CTHHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHHelper.h; sourceTree = "<group>"; };
+		A16140D929642B0700551492 /* CTHHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHHelper.m; sourceTree = "<group>"; };
+		A16140DB29642B3800551492 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		A16140DD29642B6100551492 /* CTHFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHFont.h; sourceTree = "<group>"; };
+		A16140DE29642B6100551492 /* CTHFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHFont.m; sourceTree = "<group>"; };
+		A16140E029642BBF00551492 /* RadialGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadialGradientView.h; sourceTree = "<group>"; };
+		A16140E129642BBF00551492 /* RadialGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadialGradientView.m; sourceTree = "<group>"; };
+		A16140E329642EBB00551492 /* CTHDGActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHDGActivityIndicator.m; sourceTree = "<group>"; };
+		A16140E429642EBC00551492 /* CTHDGActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHDGActivityIndicator.h; sourceTree = "<group>"; };
 		A193340D29613704000FD966 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		A193340F2961454D000FD966 /* UtilsValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsValidation.swift; sourceTree = "<group>"; };
 		A1933411296146E3000FD966 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
@@ -152,6 +226,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A16140DC29642B3900551492 /* CoreMedia.framework in Frameworks */,
 				A1D315B0295F10140083141F /* Security.framework in Frameworks */,
 				A193340E29613705000FD966 /* CoreData.framework in Frameworks */,
 				18E6AEC01F0FC22B2B587959 /* Pods_project_ios.framework in Frameworks */,
@@ -287,6 +362,8 @@
 		A16140672964166D00551492 /* swift */ = {
 			isa = PBXGroup;
 			children = (
+				A16140A42964298200551492 /* views */,
+				A16140A32964297700551492 /* controllers */,
 				A12329142961562F00454FCF /* model */,
 				A1D315A8295F0B150083141F /* utils */,
 				A111DA5F295EE997005950AD /* extensions */,
@@ -302,8 +379,11 @@
 				A161408429641E5100551492 /* PDKeychainBindings.m */,
 				A161408529641E5100551492 /* PDKeychainBindingsController.h */,
 				A161408629641E5100551492 /* PDKeychainBindingsController.m */,
+				A16140A7296429E700551492 /* controls */,
 				A161406A2964173B00551492 /* helpers */,
+				A161409F2964290B00551492 /* controllers */,
 				A16140692964173400551492 /* model */,
+				A16140A02964291E00551492 /* views */,
 			);
 			path = objectc;
 			sourceTree = "<group>";
@@ -311,6 +391,12 @@
 		A16140692964173400551492 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				A161408F2964269300551492 /* CTHBaseApi.h */,
+				A16140942964269400551492 /* CTHBaseApi.m */,
+				A16140952964269400551492 /* CTHBaseConnection.h */,
+				A16140922964269300551492 /* CTHBaseConnection.m */,
+				A16140962964269400551492 /* CTHConnection.h */,
+				A16140902964269300551492 /* CTHConnection.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -318,26 +404,135 @@
 		A161406A2964173B00551492 /* helpers */ = {
 			isa = PBXGroup;
 			children = (
-				A161408229641DEA00551492 /* HelpersJson.h */,
-				A161408129641DEA00551492 /* HelpersJson.m */,
-				A161407E29641DAE00551492 /* HelpersCache.h */,
-				A161407F29641DAE00551492 /* HelpersCache.m */,
-				A161407C29641B2F00551492 /* HelpersLanguage.h */,
-				A161407B29641B2F00551492 /* HelpersLanguage.m */,
-				A161407629641AF300551492 /* HelpersCamera.h */,
-				A161407729641AF300551492 /* HelpersCamera.m */,
-				A161407829641AF300551492 /* HelpersCoreData.h */,
-				A161407529641AF300551492 /* HelpersCoreData.m */,
-				A161406C296417A100551492 /* HelpersPlatform.h */,
-				A161406F296417A100551492 /* HelpersPlatform.m */,
-				A161406E296417A100551492 /* HelpersSqlite.h */,
-				A161406D296417A100551492 /* HelpersSqlite.m */,
-				A1614073296418B900551492 /* HelpersUserDefined.h */,
-				A1614072296418B900551492 /* HelpersUserDefined.m */,
-				A161408A29641F9F00551492 /* HelpersDownload.h */,
-				A161408B29641F9F00551492 /* HelpersDownload.m */,
+				A161408229641DEA00551492 /* CTHJson.h */,
+				A161408129641DEA00551492 /* CTHJson.m */,
+				A161407E29641DAE00551492 /* CTHCache.h */,
+				A161407F29641DAE00551492 /* CTHCache.m */,
+				A161407C29641B2F00551492 /* CTHLanguage.h */,
+				A161407B29641B2F00551492 /* CTHLanguage.m */,
+				A161407629641AF300551492 /* CTHCamera.h */,
+				A161407729641AF300551492 /* CTHCamera.m */,
+				A161407829641AF300551492 /* CTHCoreData.h */,
+				A161407529641AF300551492 /* CTHCoreData.m */,
+				A161406C296417A100551492 /* CTHPlatform.h */,
+				A161406F296417A100551492 /* CTHPlatform.m */,
+				A161406E296417A100551492 /* CTHSqlite.h */,
+				A161406D296417A100551492 /* CTHSqlite.m */,
+				A1614073296418B900551492 /* CTHUserDefined.h */,
+				A1614072296418B900551492 /* CTHUserDefined.m */,
+				A161408A29641F9F00551492 /* CTHDownload.h */,
+				A161408B29641F9F00551492 /* CTHDownload.m */,
+				A161409C2964288E00551492 /* CTHDialog.h */,
+				A161409B2964288E00551492 /* CTHDialog.m */,
+				A16140D829642B0700551492 /* CTHHelper.h */,
+				A16140D929642B0700551492 /* CTHHelper.m */,
+				A16140DD29642B6100551492 /* CTHFont.h */,
+				A16140DE29642B6100551492 /* CTHFont.m */,
+				A16140E429642EBC00551492 /* CTHDGActivityIndicator.h */,
+				A16140E329642EBB00551492 /* CTHDGActivityIndicator.m */,
 			);
 			path = helpers;
+			sourceTree = "<group>";
+		};
+		A161409F2964290B00551492 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		A16140A02964291E00551492 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				A16140A22964294100551492 /* storyboards */,
+				A16140A12964293A00551492 /* cells */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		A16140A12964293A00551492 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		A16140A22964294100551492 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		A16140A32964297700551492 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		A16140A42964298200551492 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				A16140A62964299500551492 /* cells */,
+				A16140A52964298700551492 /* storyboards */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		A16140A52964298700551492 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		A16140A62964299500551492 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		A16140A7296429E700551492 /* controls */ = {
+			isa = PBXGroup;
+			children = (
+				A16140C129642A1E00551492 /* CTCArcChart.h */,
+				A16140BD29642A1D00551492 /* CTCArcChart.m */,
+				A16140B529642A1D00551492 /* CTCButton.h */,
+				A16140AB29642A1C00551492 /* CTCButton.m */,
+				A16140B629642A1D00551492 /* CTCCircleChart.h */,
+				A16140C329642A1E00551492 /* CTCCircleChart.m */,
+				A16140C029642A1D00551492 /* CTCDepthScrollView.h */,
+				A16140BF29642A1D00551492 /* CTCDepthScrollView.m */,
+				A16140A929642A1C00551492 /* CTCImageView.h */,
+				A16140B129642A1D00551492 /* CTCImageView.m */,
+				A16140C729642A1E00551492 /* CTCLabel.h */,
+				A16140BE29642A1D00551492 /* CTCLabel.m */,
+				A16140BC29642A1D00551492 /* CTCLineChart.h */,
+				A16140BA29642A1D00551492 /* CTCLineChart.m */,
+				A16140AC29642A1C00551492 /* CTCPageDot.h */,
+				A16140AE29642A1C00551492 /* CTCPageDot.m */,
+				A16140C529642A1E00551492 /* CTCProgressBar.h */,
+				A16140B029642A1D00551492 /* CTCProgressBar.m */,
+				A16140AA29642A1C00551492 /* CTCSlideIndicate.h */,
+				A16140A829642A1C00551492 /* CTCSlideIndicate.m */,
+				A16140AD29642A1C00551492 /* CTCSlider.h */,
+				A16140B729642A1D00551492 /* CTCSlider.m */,
+				A16140B929642A1D00551492 /* CTCSwitch.h */,
+				A16140B229642A1D00551492 /* CTCSwitch.m */,
+				A16140B829642A1D00551492 /* CTCTextField.h */,
+				A16140B429642A1D00551492 /* CTCTextField.m */,
+				A16140C429642A1E00551492 /* CTCVideo.h */,
+				A16140BB29642A1D00551492 /* CTCVideo.m */,
+				A16140AF29642A1D00551492 /* CTCView.h */,
+				A16140C629642A1E00551492 /* CTCView.m */,
+				A16140B329642A1D00551492 /* CTCWKWebView.h */,
+				A16140C229642A1E00551492 /* CTCWKWebView.m */,
+				A16140E029642BBF00551492 /* RadialGradientView.h */,
+				A16140E129642BBF00551492 /* RadialGradientView.m */,
+			);
+			path = controls;
 			sourceTree = "<group>";
 		};
 		A1D315A8295F0B150083141F /* utils */ = {
@@ -356,6 +551,7 @@
 		ED0B42352A0BC134C53D5BF4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A16140DB29642B3800551492 /* CoreMedia.framework */,
 				A1232918296158D400454FCF /* libsqlite3.0.tbd */,
 				A193340D29613704000FD966 /* CoreData.framework */,
 				A1D315AF295F10140083141F /* Security.framework */,
@@ -611,37 +807,61 @@
 			files = (
 				A111DA31295EE981005950AD /* ViewController.swift in Sources */,
 				A12329162961564800454FCF /* SQLiteService.swift in Sources */,
-				A161408C29641F9F00551492 /* HelpersDownload.m in Sources */,
-				A161407929641AF400551492 /* HelpersCoreData.m in Sources */,
+				A161408C29641F9F00551492 /* CTHDownload.m in Sources */,
+				A161409A2964269400551492 /* CTHBaseApi.m in Sources */,
+				A161407929641AF400551492 /* CTHCoreData.m in Sources */,
+				A16140CA29642A1E00551492 /* CTCPageDot.m in Sources */,
 				A1D315AA295F0B9F0083141F /* ExtensionUIButton.swift in Sources */,
+				A16140CD29642A1E00551492 /* CTCSwitch.m in Sources */,
 				A19334102961454D000FD966 /* UtilsValidation.swift in Sources */,
+				A16140C829642A1E00551492 /* CTCSlideIndicate.m in Sources */,
 				A1D315AC295F0BEE0083141F /* ExtensionUILabel.swift in Sources */,
 				A148DAB42961983600C28DB3 /* LanguageService.swift in Sources */,
-				A1614074296418B900551492 /* HelpersUserDefined.m in Sources */,
+				A16140D429642A1E00551492 /* CTCDepthScrollView.m in Sources */,
+				A1614074296418B900551492 /* CTHUserDefined.m in Sources */,
 				A111DA62295EE9AF005950AD /* ExtensionUIFont.swift in Sources */,
-				A161407A29641AF400551492 /* HelpersCamera.m in Sources */,
+				A16140CB29642A1E00551492 /* CTCProgressBar.m in Sources */,
+				A16140CF29642A1E00551492 /* CTCSlider.m in Sources */,
+				A16140D729642A1E00551492 /* CTCView.m in Sources */,
+				A16140E529642EBC00551492 /* CTHDGActivityIndicator.m in Sources */,
+				A161407A29641AF400551492 /* CTHCamera.m in Sources */,
 				A148DAB0296196D100C28DB3 /* ConnectService.swift in Sources */,
 				A161408929641E5100551492 /* PDKeychainBindingsController.m in Sources */,
+				A16140CC29642A1E00551492 /* CTCImageView.m in Sources */,
 				A1D315AE295F0EAA0083141F /* UtilsCrypto.swift in Sources */,
-				A161408029641DAE00551492 /* HelpersCache.m in Sources */,
+				A161408029641DAE00551492 /* CTHCache.m in Sources */,
+				A161409D2964288E00551492 /* CTHDialog.m in Sources */,
+				A16140972964269400551492 /* CTHConnection.m in Sources */,
+				A16140D129642A1E00551492 /* CTCVideo.m in Sources */,
 				A148DAB22961981E00C28DB3 /* DownloadService.swift in Sources */,
+				A16140D229642A1E00551492 /* CTCArcChart.m in Sources */,
 				A1D315A7295F036B0083141F /* ExtensionUIViewController.swift in Sources */,
 				A1EA97D52960A52F006760BA /* SwiftTutorial.swift in Sources */,
-				A1614071296417A200551492 /* HelpersPlatform.m in Sources */,
+				A16140992964269400551492 /* CTHBaseConnection.m in Sources */,
+				A1614071296417A200551492 /* CTHPlatform.m in Sources */,
 				A123292229615A2500454FCF /* Swift-Bridging-Header.h in Sources */,
 				A123292429615D6900454FCF /* AlamofireService.swift in Sources */,
 				A161408829641E5100551492 /* PDKeychainBindings.m in Sources */,
-				A161408329641DEA00551492 /* HelpersJson.m in Sources */,
+				A161408329641DEA00551492 /* CTHJson.m in Sources */,
+				A16140E229642BBF00551492 /* RadialGradientView.m in Sources */,
 				A1933412296146E3000FD966 /* Global.swift in Sources */,
+				A16140D629642A1E00551492 /* CTCCircleChart.m in Sources */,
+				A16140C929642A1E00551492 /* CTCButton.m in Sources */,
 				A111DA37295EE981005950AD /* project_ios.xcdatamodeld in Sources */,
+				A16140DA29642B0700551492 /* CTHHelper.m in Sources */,
 				A1EA97D92960ACB5006760BA /* UtilsLog.swift in Sources */,
+				A16140CE29642A1E00551492 /* CTCTextField.m in Sources */,
 				A111DA63295EE9AF005950AD /* ExtensionUIDevice.swift in Sources */,
+				A16140D029642A1E00551492 /* CTCLineChart.m in Sources */,
 				A123292629615D9800454FCF /* ExtensionString.swift in Sources */,
 				A111DA2D295EE981005950AD /* AppDelegate.swift in Sources */,
-				A1614070296417A200551492 /* HelpersSqlite.m in Sources */,
+				A1614070296417A200551492 /* CTHSqlite.m in Sources */,
+				A16140DF29642B6100551492 /* CTHFont.m in Sources */,
 				A1EA97D72960AC87006760BA /* UtilsCoreData.swift in Sources */,
 				A111DA2F295EE981005950AD /* SceneDelegate.swift in Sources */,
-				A161407D29641B2F00551492 /* HelpersLanguage.m in Sources */,
+				A161407D29641B2F00551492 /* CTHLanguage.m in Sources */,
+				A16140D529642A1E00551492 /* CTCWKWebView.m in Sources */,
+				A16140D329642A1E00551492 /* CTCLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

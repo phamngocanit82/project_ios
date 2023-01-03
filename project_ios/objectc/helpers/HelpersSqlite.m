@@ -1,8 +1,8 @@
 #import "sqlite3.h"
 #import "NSDictionary_JSONExtensions.h"
-#import "HelpersSqlite.h"
+#import "CTHSqlite.h"
 #import "HelpersUserDefined.h"
-@implementation HelpersSqlite
+@implementation CTHSqlite
 +(void)initTable{
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSError *error;

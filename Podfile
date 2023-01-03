@@ -18,6 +18,8 @@ target 'project_ios' do
   pod 'NVActivityIndicatorView'
   
   #object c
+  pod 'SDWebImage'
+  pod 'DGActivityIndicatorView'
   target 'project_iosTests' do
     inherit! :search_paths
     # Pods for testing
