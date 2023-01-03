@@ -4,6 +4,8 @@
 target 'project_ios' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+  
+  #swit
   pod 'SDWebImage'
   pod 'SQLCipher'
   pod 'SSZipArchive'
@@ -14,8 +16,8 @@ target 'project_ios' do
   pod 'NSHash'
   pod 'Alamofire'
   pod 'NVActivityIndicatorView'
-  # Pods for project_ios
-
+  
+  #object c
   target 'project_iosTests' do
     inherit! :search_paths
     # Pods for testing

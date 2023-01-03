@@ -1,6 +1,6 @@
 import UIKit
-class utilsValidation:NSObject{
-    static let sharedInstance = utilsValidation()
+class UtilsValidation:NSObject{
+    static let sharedInstance = UtilsValidation()
     override fileprivate init() {}
     func isValidEmail(email:String?) -> Bool {
         guard email != nil else { return false }

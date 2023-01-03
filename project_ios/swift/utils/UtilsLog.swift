@@ -1,12 +1,5 @@
-//
-//  utilsLog.swift
-//  project_ios
-//
-//  Created by An on 01/01/2023.
-//
-
 import Foundation
-struct utilsLog {
+struct UtilsLog {
     static public func log(_ message: Any) {
         if Global.SHOW_LOG {
             print("\(message)")

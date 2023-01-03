@@ -62,7 +62,7 @@ class ConnectService: NSObject {
             var json_data:NSString = String(data: jsonData!, encoding: .utf8)! as NSString
             json_data = NSString(format:"json_data=%@", json_data)
             json_data = json_data.replacingOccurrences(of: "+", with: "%2B") as NSString
-            utilsLog.log(self, "json_data \(String(describing: json_data))")
+            UtilsLog.log(self, "json_data \(String(describing: json_data))")
             let postLength = "\(UInt(json_data.length))"
             request.setValue(postLength, forHTTPHeaderField: "Content-Length")
             request.setValue("application/json", forHTTPHeaderField: "Accept")
@@ -132,53 +132,53 @@ class ConnectService: NSObject {
 }
 extension ConnectService:URLSessionDelegate {
     func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
-        utilsLog.log(self, "urlSession", "didReceive challenge")
+        UtilsLog.log(self, "urlSession", "didReceive challenge")
         completionHandler(.useCredential, URLCredential(trust: challenge.protectionSpace.serverTrust!))
     }
     func urlSession(_ session: URLSession, didBecomeInvalidWithError error: Error?) {
         if let err = error {
-            utilsLog.log(self, "urlSession", "Error: \(err.localizedDescription)")
+            UtilsLog.log(self, "urlSession", "Error: \(err.localizedDescription)")
         } else {
-            utilsLog.log(self, "urlSession", "Error. Giving up")
+            UtilsLog.log(self, "urlSession", "Error. Giving up")
         }
     }
 }
 extension ConnectService:URLSessionDataDelegate {
     func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didBecome streamTask: URLSessionStreamTask) {
-        utilsLog.log(self, "urlSession", "didBecome streamTask")
+        UtilsLog.log(self, "urlSession", "didBecome streamTask")
         streamTask.resume()
     }
     func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didBecome downloadTask: URLSessionDownloadTask) {
-        utilsLog.log(self, "urlSession", "didBecome downloadTask")
+        UtilsLog.log(self, "urlSession", "didBecome downloadTask")
         downloadTask.resume()
     }
     func urlSession(_ session: URLSession, task: URLSessionTask, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
-        utilsLog.log(self, "urlSession", "didReceive challenge")
+        UtilsLog.log(self, "urlSession", "didReceive challenge")
         completionHandler(.useCredential, URLCredential(trust: challenge.protectionSpace.serverTrust!))
     }
     func urlSession(_ session: URLSession, task: URLSessionTask, willPerformHTTPRedirection response: HTTPURLResponse, newRequest request: URLRequest, completionHandler: @escaping (URLRequest?) -> Void) {
         if let urlString = request.url?.absoluteString {
-            utilsLog.log(self, "urlSession", "willPerformHTTPRedirection to \(urlString)")
+            UtilsLog.log(self, "urlSession", "willPerformHTTPRedirection to \(urlString)")
         } else {
-            utilsLog.log(self, "urlSession", "willPerformHTTPRedirection")
+            UtilsLog.log(self, "urlSession", "willPerformHTTPRedirection")
         }
     }
     func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithError error: Error?) {
         if let err = error {
-            utilsLog.log(self, "urlSession", "Error: \(err.localizedDescription)")
+            UtilsLog.log(self, "urlSession", "Error: \(err.localizedDescription)")
         } else {
-            utilsLog.log(self, "urlSession", "Error. Giving up")
+            UtilsLog.log(self, "urlSession", "Error. Giving up")
             if let responseText = String(data: responseData! as Data, encoding: .utf8) {
                 parseString(responseString: responseText)
             }
         }
     }
     func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive response: URLResponse, completionHandler: @escaping (URLSession.ResponseDisposition) -> Void) {
-        utilsLog.log(self, "urlSession", "didReceive response")
+        UtilsLog.log(self, "urlSession", "didReceive response")
         completionHandler(URLSession.ResponseDisposition.allow)
     }
     func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive data: Data) {
-        utilsLog.log(self, "urlSession", "didReceive data")
+        UtilsLog.log(self, "urlSession", "didReceive data")
         if !(responseData != nil) {
             responseData = NSMutableData()
         }

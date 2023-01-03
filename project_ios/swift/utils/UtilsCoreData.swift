@@ -1,6 +1,6 @@
 import UIKit
 import CoreData
-class utilsCoreData{
+class UtilsCoreData{
     class func add(_ entityName:String, _ dic:NSMutableDictionary) {
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         let entity = NSEntityDescription.entity(forEntityName: entityName, in: context)
@@ -11,7 +11,7 @@ class utilsCoreData{
         do {
             try context.save()
         } catch {
-            utilsLog.log(self, "Failed add: "+entityName)
+            UtilsLog.log(self, "Failed add: "+entityName)
         }
     }
     class func delete(_ entityName:String, _ id: NSInteger){
@@ -26,7 +26,7 @@ class utilsCoreData{
             }
             try context.save()
         } catch {
-            utilsLog.log(self, "Failed delete: "+entityName)
+            UtilsLog.log(self, "Failed delete: "+entityName)
         }
     }
     class func deleteAll(_ entityName:String){
@@ -39,7 +39,7 @@ class utilsCoreData{
             }
             try context.save()
         } catch {
-            utilsLog.log(self, "Failed deleteAll: "+entityName)
+            UtilsLog.log(self, "Failed deleteAll: "+entityName)
         }
     }
     class func isExist(_ entityName:String, _ name: NSInteger, _ gender:Bool, _ date_of_birth:Date) -> Bool {
@@ -55,7 +55,7 @@ class utilsCoreData{
                 return true
             }
         } catch {
-            utilsLog.log(self, "Failed isExist: "+entityName)
+            UtilsLog.log(self, "Failed isExist: "+entityName)
         }
         return false
     }
@@ -66,7 +66,7 @@ class utilsCoreData{
             let result = try context.fetch(request)
             return result.count
         } catch {
-            utilsLog.log(self, "Failed countRows: "+entityName)
+            UtilsLog.log(self, "Failed countRows: "+entityName)
         }
         return 0
     }
@@ -82,7 +82,7 @@ class utilsCoreData{
             let result = try context.fetch(request)
             return result
         } catch {
-            utilsLog.log(self, "Failed queryAll: "+entityName)
+            UtilsLog.log(self, "Failed queryAll: "+entityName)
         }
         return []
     }
@@ -106,7 +106,7 @@ class utilsCoreData{
                 }
             }
         } catch {
-            utilsLog.log(self, "Failed update: "+entityName)
+            UtilsLog.log(self, "Failed update: "+entityName)
         }
     }
 }
