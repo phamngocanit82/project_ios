@@ -1,0 +1,10 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+        {
+            "appID": "WVRWVLPNC6.vn.ogilvy.testflight.milo30",
+            "paths": ["*"]
+        }]
+    }
+}

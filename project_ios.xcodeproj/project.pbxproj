@@ -67,6 +67,10 @@
 		A16140DF29642B6100551492 /* CTHFont.m in Sources */ = {isa = PBXBuildFile; fileRef = A16140DE29642B6100551492 /* CTHFont.m */; };
 		A16140E229642BBF00551492 /* RadialGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = A16140E129642BBF00551492 /* RadialGradientView.m */; };
 		A16140E529642EBC00551492 /* CTHDGActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = A16140E329642EBB00551492 /* CTHDGActivityIndicator.m */; };
+		A16140E72964398500551492 /* UtilsDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16140E62964398500551492 /* UtilsDownload.swift */; };
+		A16140E929643A8F00551492 /* UtilsKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16140E829643A8F00551492 /* UtilsKeychain.swift */; };
+		A16140EB29643B2E00551492 /* UtilsAppSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16140EA29643B2E00551492 /* UtilsAppSetting.swift */; };
+		A16140ED2964406B00551492 /* UtilsPhotoGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16140EC2964406B00551492 /* UtilsPhotoGallery.swift */; };
 		A193340E29613705000FD966 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A193340D29613704000FD966 /* CoreData.framework */; };
 		A19334102961454D000FD966 /* UtilsValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A193340F2961454D000FD966 /* UtilsValidation.swift */; };
 		A1933412296146E3000FD966 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1933411296146E3000FD966 /* Global.swift */; };
@@ -206,6 +210,10 @@
 		A16140E129642BBF00551492 /* RadialGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadialGradientView.m; sourceTree = "<group>"; };
 		A16140E329642EBB00551492 /* CTHDGActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHDGActivityIndicator.m; sourceTree = "<group>"; };
 		A16140E429642EBC00551492 /* CTHDGActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHDGActivityIndicator.h; sourceTree = "<group>"; };
+		A16140E62964398500551492 /* UtilsDownload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsDownload.swift; sourceTree = "<group>"; };
+		A16140E829643A8F00551492 /* UtilsKeychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsKeychain.swift; sourceTree = "<group>"; };
+		A16140EA29643B2E00551492 /* UtilsAppSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsAppSetting.swift; sourceTree = "<group>"; };
+		A16140EC2964406B00551492 /* UtilsPhotoGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsPhotoGallery.swift; sourceTree = "<group>"; };
 		A193340D29613704000FD966 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		A193340F2961454D000FD966 /* UtilsValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsValidation.swift; sourceTree = "<group>"; };
 		A1933411296146E3000FD966 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
@@ -538,12 +546,16 @@
 		A1D315A8295F0B150083141F /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				A1EA97D42960A52F006760BA /* SwiftTutorial.swift */,
+				A1933411296146E3000FD966 /* Global.swift */,
 				A1D315AD295F0EAA0083141F /* UtilsCrypto.swift */,
 				A193340F2961454D000FD966 /* UtilsValidation.swift */,
-				A1EA97D42960A52F006760BA /* SwiftTutorial.swift */,
 				A1EA97D62960AC87006760BA /* UtilsCoreData.swift */,
 				A1EA97D82960ACB5006760BA /* UtilsLog.swift */,
-				A1933411296146E3000FD966 /* Global.swift */,
+				A16140E62964398500551492 /* UtilsDownload.swift */,
+				A16140E829643A8F00551492 /* UtilsKeychain.swift */,
+				A16140EA29643B2E00551492 /* UtilsAppSetting.swift */,
+				A16140EC2964406B00551492 /* UtilsPhotoGallery.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -805,6 +817,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A16140EB29643B2E00551492 /* UtilsAppSetting.swift in Sources */,
 				A111DA31295EE981005950AD /* ViewController.swift in Sources */,
 				A12329162961564800454FCF /* SQLiteService.swift in Sources */,
 				A161408C29641F9F00551492 /* CTHDownload.m in Sources */,
@@ -820,9 +833,11 @@
 				A16140D429642A1E00551492 /* CTCDepthScrollView.m in Sources */,
 				A1614074296418B900551492 /* CTHUserDefined.m in Sources */,
 				A111DA62295EE9AF005950AD /* ExtensionUIFont.swift in Sources */,
+				A16140E929643A8F00551492 /* UtilsKeychain.swift in Sources */,
 				A16140CB29642A1E00551492 /* CTCProgressBar.m in Sources */,
 				A16140CF29642A1E00551492 /* CTCSlider.m in Sources */,
 				A16140D729642A1E00551492 /* CTCView.m in Sources */,
+				A16140ED2964406B00551492 /* UtilsPhotoGallery.swift in Sources */,
 				A16140E529642EBC00551492 /* CTHDGActivityIndicator.m in Sources */,
 				A161407A29641AF400551492 /* CTHCamera.m in Sources */,
 				A148DAB0296196D100C28DB3 /* ConnectService.swift in Sources */,
@@ -848,6 +863,7 @@
 				A16140D629642A1E00551492 /* CTCCircleChart.m in Sources */,
 				A16140C929642A1E00551492 /* CTCButton.m in Sources */,
 				A111DA37295EE981005950AD /* project_ios.xcdatamodeld in Sources */,
+				A16140E72964398500551492 /* UtilsDownload.swift in Sources */,
 				A16140DA29642B0700551492 /* CTHHelper.m in Sources */,
 				A1EA97D92960ACB5006760BA /* UtilsLog.swift in Sources */,
 				A16140CE29642A1E00551492 /* CTCTextField.m in Sources */,

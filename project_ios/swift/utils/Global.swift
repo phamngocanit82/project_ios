@@ -44,4 +44,7 @@ struct Global {
     
     static let DATABASE_SQLITE = "PNA.db"
     static let DATABASE_SQLITE_PASS = "aimabiet123"
+    
+    static let ITUNES_URL = Bundle.main.infoDictionary!["ITUNES_URL"] as! String
+    static let LANGUAGE_PREFIX = "en:"
 }
