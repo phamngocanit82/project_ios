@@ -1,5 +1,4 @@
 #import "NSDictionary_JSONExtensions.h"
-#import "CTHLanguage.h"
 @implementation CTHLanguage
 +(NSString *)language:(NSString*)key{
     return [CTHLanguage language:key Text:@""];

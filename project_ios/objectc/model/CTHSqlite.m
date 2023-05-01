@@ -1,7 +1,5 @@
 #import "sqlite3.h"
 #import "NSDictionary_JSONExtensions.h"
-#import "CTHSqlite.h"
-#import "CTHUserDefined.h"
 @implementation CTHSqlite
 +(void)initTable{
     NSFileManager *fileManager = [NSFileManager defaultManager];

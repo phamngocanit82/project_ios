@@ -1,6 +1,5 @@
 #import <CoreData/CoreData.h>
 #import "NSDictionary_JSONExtensions.h"
-#import "CTHCoreData.h"
 @implementation CTHCoreData
 +(void)addNew:(NSManagedObjectContext *)context Entity:(NSString*)entity Dictionary:(NSDictionary*)dic Attributes:(NSString*)attributes Param:(NSString*)param{
     if([self update:context Entity:entity Dictionary:dic Attributes:attributes Param:param])

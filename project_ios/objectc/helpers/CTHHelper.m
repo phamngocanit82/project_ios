@@ -1,14 +1,7 @@
 #import <AdSupport/ASIdentifierManager.h>
 #import <CommonCrypto/CommonDigest.h>
-#import "CTHPlatform.h"
-#import "CTHFont.h"
-#import "CTHUserDefined.h"
-#import "CTCLabel.h"
 //#import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import "NSDictionary_JSONExtensions.h"
-#import "Constant.h"
-#import "CTHHelper.h"
-#import "CTHLanguage.h"
 @implementation CTHHelper
 +(instancetype)sharedInstance{
     static id sharedInstance = nil;
@@ -402,7 +395,7 @@
 }
 +(void)log:(NSString *)strText{
 }
-+(void)animationTextFieldDidBeginEditing:(CTCLabel*)label{
++(void)animationTextFieldDidBeginEditing:(CTHLabel*)label{
     [self animation:^{
         label.frame = CGRectMake(0, 0, label.frame.size.width, 20);
         label.fontStyleLabel = 1;
@@ -411,7 +404,7 @@
         label.textColor = [CTHHelper colorFromHexString:[UIColor clearColor] HexString:CTHUserDefined.GREEN_COLOR];
     }];
 }
-+(void)animationTextFieldDidEndEditing:(CTCLabel*)label TextField:(UITextField*)textField{
++(void)animationTextFieldDidEndEditing:(CTHLabel*)label TextField:(UITextField*)textField{
     [self animation:^{
         label.frame = textField.frame;
         label.fontStyleLabel = 2;

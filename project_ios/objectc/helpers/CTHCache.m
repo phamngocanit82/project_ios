@@ -2,9 +2,6 @@
 #import "NSDictionary_JSONExtensions.h"
 #import "AESCrypt.h"
 #import "PDKeychainBindings.h"
-#import "CTHUserDefined.h"
-#import "CTHJson.h"
-#import "CTHCache.h"
 @implementation CTHCache
 //NSUserDefault
 +(void)clearWithKeyNSUserDefault:(NSString*)strKey{

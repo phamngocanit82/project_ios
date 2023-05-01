@@ -1,9 +1,4 @@
 #import "CTHBaseConnection.h"
-#import "CTHSqlite.h"
-#import "CTHJson.h"
-#import "CTHDialog.h"
-#import "CTHCache.h"
-#import "CTHUserDefined.h"
 #import "CTHBaseApi.h"
 @implementation CTHBaseConnection
 -(void)cancel {
@@ -125,7 +120,14 @@
     
         return;
     }
-    if ([[self.response valueForKey:@"status"] integerValue] == STATUS_SUCCESS){
+    
+    if (self.isShowLoading) {
+        self.isShowLoading = NO;
+        [[CTHDialog sharedInstance] hideLoading];
+    }
+    self.callbackComplete(self.response, STATUS_SUCCESS);
+    
+    /*if ([[self.response valueForKey:@"status"] integerValue] == STATUS_SUCCESS){
         if (self.isShowLoading) {
             self.isShowLoading = NO;
             [[CTHDialog sharedInstance] hideLoading];
@@ -139,7 +141,7 @@
             self.isShowLoading = NO;
             [[CTHDialog sharedInstance] hideLoading];
         }
-    }
+    }*/
     [CTHCache destroyNetworkCache];
     [CTHCache destroyLackingDataProtection];
     responseString = nil;

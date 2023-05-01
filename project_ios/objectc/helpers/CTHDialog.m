@@ -1,14 +1,4 @@
 #import "DGActivityIndicatorView.h"
-#import "CTHHelper.h"
-#import "CTHPlatform.h"
-#import "Constant.h"
-#import "CTCButton.h"
-#import "CTCView.h"
-#import "CTCLabel.h"
-#import "CTHDGActivityIndicator.h"
-#import "CTHUserDefined.h"
-#import "CTHDialog.h"
-#import "CTHLanguage.h"
 @implementation CTHDialog
 +(instancetype)sharedInstance{
     static id sharedInstance = nil;
@@ -45,16 +35,15 @@
 -(void)showLoading{
     [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(checkShowLoading) object:nil];
     [self performSelector:@selector(checkShowLoading) withObject:nil afterDelay:30];
-    UINavigationController *navigationController = (UINavigationController*)[UIApplication sharedApplication].delegate.window.rootViewController;
-    UIView *view = [CTHHelper controlFromTag:TAG_VIEW_LOADING withView:navigationController.view kind:[UIView class]];
+    UIView *view = [CTHHelper controlFromTag:TAG_VIEW_LOADING withView:[[CTHController sharedInstance] getNavigationController].view kind:[UIView class]];
     if(view != nil)
         return;
     view = [CTHHelper controlFromNib:@"CTHDialog" RestorationIdentifier:@"loading"];
     if(view == nil)
         return;
     /*for(UIControl *control in view.subviews){
-        if ([control isKindOfClass:[CTCCircleChart class]]) {
-            CTCCircleChart *circleChart= (CTCCircleChart*)control;
+        if ([control isKindOfClass:[CTHCircleChart class]]) {
+            CTHCircleChart *circleChart= (CTHCircleChart*)control;
             circleChart.backgroundColor = [UIColor clearColor];
             circleChart.percent = 100;
             circleChart.duration = 0.01;
@@ -75,14 +64,13 @@
     activityIndicatorView.frame = CGRectMake((view.frame.size.width-width)/2, (view.frame.size.height-height)/2, width, height);
     [view addSubview:activityIndicatorView];
     [activityIndicatorView startAnimating];
-    [navigationController.view addSubview:view];
-    [navigationController.view bringSubviewToFront:view];
+    [[[CTHController sharedInstance] getNavigationController].view addSubview:view];
+    [[[CTHController sharedInstance] getNavigationController].view bringSubviewToFront:view];
 }
 -(void)showReconnecting{
-    UINavigationController *navigationController = (UINavigationController*)[UIApplication sharedApplication].delegate.window.rootViewController;
-    UIView *view = [CTHHelper controlFromTag:TAG_VIEW_LOADING withView:navigationController.view kind:[UIView class]];
+    UIView *view = [CTHHelper controlFromTag:TAG_VIEW_LOADING withView:[[CTHController sharedInstance] getNavigationController].view kind:[UIView class]];
     if(view != nil){
-        CTCLabel *label = (CTCLabel*)[CTHHelper controlFromTag:1 withView:view kind:[CTCLabel class]];
+        CTHLabel *label = (CTHLabel*)[CTHHelper controlFromTag:1 withView:view kind:[CTHLabel class]];
         if(label != nil){
             label.hidden = NO;
             [label changeText:[CTHLanguage language:@"reconnecting to milo band" Text:@"Reconnecting to  Champ Band..."]];
@@ -90,10 +78,9 @@
     }
 }
 -(void)showSynchronizing{
-    UINavigationController *navigationController = (UINavigationController*)[UIApplication sharedApplication].delegate.window.rootViewController;
-    UIView *view = [CTHHelper controlFromTag:TAG_VIEW_LOADING withView:navigationController.view kind:[UIView class]];
+    UIView *view = [CTHHelper controlFromTag:TAG_VIEW_LOADING withView:[[CTHController sharedInstance] getNavigationController].view kind:[UIView class]];
     if(view != nil){
-        CTCLabel *label = (CTCLabel*)[CTHHelper controlFromTag:1 withView:view kind:[CTCLabel class]];
+        CTHLabel *label = (CTHLabel*)[CTHHelper controlFromTag:1 withView:view kind:[CTHLabel class]];
         if(label != nil){
             label.hidden = NO;
             [label changeText:[CTHLanguage language:@"synchronizing data from milo band" Text:@"Synchronizing data from Champ Band..."]];
@@ -101,16 +88,15 @@
     }
 }
 -(void)showLoadingAlways{
-    UINavigationController *navigationController = (UINavigationController*)[UIApplication sharedApplication].delegate.window.rootViewController;
-    UIView *view = [CTHHelper controlFromTag:TAG_VIEW_LOADING withView:navigationController.view kind:[UIView class]];
+    UIView *view = [CTHHelper controlFromTag:TAG_VIEW_LOADING withView:[[CTHController sharedInstance] getNavigationController].view kind:[UIView class]];
     if(view != nil)
         return;
     view = [CTHHelper controlFromNib:@"CTHDialog" RestorationIdentifier:@"loading"];
     if(view == nil)
         return;
     /*for(UIControl *control in view.subviews){
-        if ([control isKindOfClass:[CTCCircleChart class]]) {
-            CTCCircleChart *circleChart= (CTCCircleChart*)control;
+        if ([control isKindOfClass:[CTHCircleChart class]]) {
+            CTHCircleChart *circleChart= (CTHCircleChart*)control;
             circleChart.backgroundColor = [UIColor clearColor];
             circleChart.percent = 100;
             circleChart.duration = 0.01;
@@ -131,17 +117,16 @@
     activityIndicatorView.frame = CGRectMake((view.frame.size.width-width)/2, (view.frame.size.height-height)/2, width, height);
     [view addSubview:activityIndicatorView];
     [activityIndicatorView startAnimating];
-    [navigationController.view addSubview:view];
+    [[[CTHController sharedInstance] getNavigationController].view addSubview:view];
 }
 -(void)hideLoading{
     [NSObject cancelPreviousPerformRequestsWithTarget:self];
     [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(showLoading) object:nil];
     [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(checkShowLoading) object:nil];
-    UINavigationController *navigationController = (UINavigationController*)[UIApplication sharedApplication].delegate.window.rootViewController;
-    UIView *view = [CTHHelper controlFromTag:TAG_VIEW_LOADING withView:navigationController.view kind:[UIView class]];
+    UIView *view = [CTHHelper controlFromTag:TAG_VIEW_LOADING withView:[[CTHController sharedInstance] getNavigationController].view kind:[UIView class]];
     if(view == nil)
         return;
-    CTCLabel *label = (CTCLabel*)[CTHHelper controlFromTag:1 withView:view kind:[CTCLabel class]];
+    CTHLabel *label = (CTHLabel*)[CTHHelper controlFromTag:1 withView:view kind:[CTHLabel class]];
     if(label != nil){
         label.hidden = YES;
     }
@@ -150,8 +135,7 @@
 //Photo camera
 -(void)actionCamera:(id)delegate{
     self.delegate = delegate;
-    UINavigationController *navigationController = (UINavigationController*)[UIApplication sharedApplication].delegate.window.rootViewController;
-    UIView *view = [CTHHelper controlFromTag:TAG_VIEW_CAMERA withView:navigationController.view kind:[UIView class]];
+    UIView *view = [CTHHelper controlFromTag:TAG_VIEW_CAMERA withView:[[CTHController sharedInstance] getNavigationController].view kind:[UIView class]];
     if(view != nil)
         return;
     view = [CTHHelper controlFromNib:@"CTHDialog" RestorationIdentifier:@"camera"];
@@ -161,24 +145,24 @@
         self.imgArray = [[NSMutableArray alloc] initWithCapacity:0];
     [self.imgArray removeAllObjects];
     
-    CTCButton *button = (CTCButton*)[CTHHelper controlFromTag:2 withView:view kind:[CTCButton class]];
-    if(button != nil && [button isKindOfClass:[CTCButton class]]){
+    CTHButton *button = (CTHButton*)[CTHHelper controlFromTag:2 withView:view kind:[CTHButton class]];
+    if(button != nil && [button isKindOfClass:[CTHButton class]]){
         [button addTarget:self action:@selector(closeCamera) forControlEvents:UIControlEventTouchUpInside];
     }
-    CTCView *controlsView = (CTCView*)[CTHHelper controlFromTag:1 withView:view kind:[CTCView class]];
-    if(controlsView == nil || ![controlsView isKindOfClass:[CTCView class]])
+    CTHView *controlsView = (CTHView*)[CTHHelper controlFromTag:1 withView:view kind:[CTHView class]];
+    if(controlsView == nil || ![controlsView isKindOfClass:[CTHView class]])
         return;
     
-    button = (CTCButton*)[CTHHelper controlFromTag:1 withView:controlsView kind:[CTCButton class]];
-    if(button != nil && [button isKindOfClass:[CTCButton class]]){
+    button = (CTHButton*)[CTHHelper controlFromTag:1 withView:controlsView kind:[CTHButton class]];
+    if(button != nil && [button isKindOfClass:[CTHButton class]]){
         if(![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]){
             button.enabled = NO;
             [button setTitleColor:[CTHHelper colorFromHexString:[UIColor clearColor] HexString:CTHUserDefined.GRAY_COLOR] forState:UIControlStateNormal];
         }
         [button addTarget:self action:@selector(actionTakePhoto) forControlEvents:UIControlEventTouchUpInside];
     }
-    button = (CTCButton*)[CTHHelper controlFromTag:2 withView:controlsView kind:[CTCButton class]];
-    if(button != nil && [button isKindOfClass:[CTCButton class]]){
+    button = (CTHButton*)[CTHHelper controlFromTag:2 withView:controlsView kind:[CTHButton class]];
+    if(button != nil && [button isKindOfClass:[CTHButton class]]){
         [button addTarget:self action:@selector(actionCameraRoll) forControlEvents:UIControlEventTouchUpInside];
     }
     
@@ -186,7 +170,7 @@
     view.tag = TAG_VIEW_CAMERA;
     view.alpha = 0;
     view.userInteractionEnabled = NO;
-    [navigationController.view addSubview:view];
+    [[[CTHController sharedInstance] getNavigationController].view addSubview:view];
     [CTHHelper animation:^{
         view.alpha = 1;
     }];
@@ -198,31 +182,28 @@
     }];
 }
 -(void)actionTakePhoto{
-    UINavigationController *navigationController = (UINavigationController*)[UIApplication sharedApplication].delegate.window.rootViewController;
     self.imagePickerController = [[UIImagePickerController alloc] init];
     self.imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
     self.imagePickerController.delegate = self;
     self.imagePickerController.allowsEditing = YES;
-    [navigationController presentViewController:self.imagePickerController animated:YES completion:nil];
+    [[[CTHController sharedInstance] getNavigationController] presentViewController:self.imagePickerController animated:YES completion:nil];
     [self closeCamera];
 }
 -(void)actionCameraRoll{
-    UINavigationController *navigationController = (UINavigationController*)[UIApplication sharedApplication].delegate.window.rootViewController;
     self.imagePickerController = [[UIImagePickerController alloc] init];
     self.imagePickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     self.imagePickerController.delegate = self;
     self.imagePickerController.allowsEditing = YES;
-    [navigationController presentViewController:self.imagePickerController animated:YES completion:nil];
+    [[[CTHController sharedInstance] getNavigationController] presentViewController:self.imagePickerController animated:YES completion:nil];
     [self closeCamera];
 }
 -(void)closeCamera{
-    UINavigationController *navigationController = (UINavigationController*)[UIApplication sharedApplication].delegate.window.rootViewController;
-    UIView *view = [CTHHelper controlFromTag:TAG_VIEW_CAMERA withView:navigationController.view kind:[UIView class]];
+    UIView *view = [CTHHelper controlFromTag:TAG_VIEW_CAMERA withView:[[CTHController sharedInstance] getNavigationController].view kind:[UIView class]];
     if(view == nil)
         return;
     view.userInteractionEnabled = NO;
-    CTCView *controlsView = (CTCView*)[CTHHelper controlFromTag:1 withView:view kind:[CTCView class]];
-    if(controlsView == nil || ![controlsView isKindOfClass:[CTCView class]])
+    CTHView *controlsView = (CTHView*)[CTHHelper controlFromTag:1 withView:view kind:[CTHView class]];
+    if(controlsView == nil || ![controlsView isKindOfClass:[CTHView class]])
         return;
     [controlsView setTransform:CGAffineTransformMakeScale(1.0, 1.0)];
     [CTHHelper animation:^{
@@ -242,8 +223,7 @@
         self.imgArray = [[NSMutableArray alloc]initWithCapacity:0];
     NSData *someImageData = UIImageJPEGRepresentation(img, 0.8);
     [self.imgArray addObject:someImageData];
-    UINavigationController *navigationController = (UINavigationController*)[UIApplication sharedApplication].delegate.window.rootViewController;
-    [navigationController dismissViewControllerAnimated:YES completion:^{ }];
+    [[[CTHController sharedInstance] getNavigationController] dismissViewControllerAnimated:YES completion:^{ }];
     self.imagePickerController = nil;
     if (self.delegate && [self.delegate respondsToSelector:@selector(photoCompleted:)]) {
         [self.delegate photoCompleted:self];
@@ -251,8 +231,7 @@
 }
 -(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
     if (self.imagePickerController) {
-        UINavigationController *navigationController = (UINavigationController*)[UIApplication sharedApplication].delegate.window.rootViewController;
-        [navigationController dismissViewControllerAnimated:YES completion:^{ }];
+        [[[CTHController sharedInstance] getNavigationController] dismissViewControllerAnimated:YES completion:^{ }];
         self.imagePickerController = nil;
     }
 }
@@ -266,8 +245,7 @@
     }
 }
 -(void)closeBuildAvatar{
-    UINavigationController *navigationController = (UINavigationController*)[UIApplication sharedApplication].delegate.window.rootViewController;
-    UIView *contentView = navigationController.view;
+    UIView *contentView = [[CTHController sharedInstance] getNavigationController].view;
     NSArray *subviews = [contentView subviews];
     for (UIView *subview in subviews) {
         if(subview.tag == TAG_VIEW_BUILD_AVATAR){
@@ -280,8 +258,7 @@
 //Show Dialog
 -(void)showDialogOk:(id)delegate Title:(NSString*)title Message:(NSString*)message TextOk:(NSString*)textOk{
     self.delegate = delegate;
-    UINavigationController *navigationController = (UINavigationController*)[UIApplication sharedApplication].delegate.window.rootViewController;
-    UIView *view = [CTHHelper controlFromTag:TAG_VIEW_DIALOG withView:navigationController.view kind:[UIView class]];
+    UIView *view = [CTHHelper controlFromTag:TAG_VIEW_DIALOG withView:[[CTHController sharedInstance] getNavigationController].view kind:[UIView class]];
     if(view != nil)
         [view removeFromSuperview];
     view = [CTHHelper controlFromNib:@"CTHDialog" RestorationIdentifier:@"build_dialog"];
@@ -289,21 +266,21 @@
         return;
     [view endEditing:YES];
     
-    CTCView *controlsView = (CTCView*)[CTHHelper controlFromTag:1 withView:view kind:[CTCView class]];
-    if(controlsView == nil || ![controlsView isKindOfClass:[CTCView class]])
+    CTHView *controlsView = (CTHView*)[CTHHelper controlFromTag:1 withView:view kind:[CTHView class]];
+    if(controlsView == nil || ![controlsView isKindOfClass:[CTHView class]])
         return;
-    CTCLabel *label = (CTCLabel*)[CTHHelper controlFromTag:1 withView:controlsView kind:[CTCLabel class]];
-    if(label == nil || ![label isKindOfClass:[CTCLabel class]])
+    CTHLabel *label = (CTHLabel*)[CTHHelper controlFromTag:1 withView:controlsView kind:[CTHLabel class]];
+    if(label == nil || ![label isKindOfClass:[CTHLabel class]])
         return;
     label.text = title;
     
-    label = (CTCLabel*)[CTHHelper controlFromTag:2 withView:controlsView kind:[CTCLabel class]];
-    if(label == nil || ![label isKindOfClass:[CTCLabel class]])
+    label = (CTHLabel*)[CTHHelper controlFromTag:2 withView:controlsView kind:[CTHLabel class]];
+    if(label == nil || ![label isKindOfClass:[CTHLabel class]])
         return;
     label.text = message;
     
-    CTCButton *button = (CTCButton*)[CTHHelper controlFromTag:3 withView:controlsView kind:[CTCButton class]];
-    if(button == nil || ![button isKindOfClass:[CTCButton class]])
+    CTHButton *button = (CTHButton*)[CTHHelper controlFromTag:3 withView:controlsView kind:[CTHButton class]];
+    if(button == nil || ![button isKindOfClass:[CTHButton class]])
         return;
     [button setTitle:textOk forState:UIControlStateNormal];
     [button addTarget:self action:@selector(closeDialogOk) forControlEvents:UIControlEventTouchUpInside];
@@ -322,7 +299,7 @@
     view.tag = TAG_VIEW_DIALOG;
     view.frame = CGRectMake(0, 0, CTHPlatform.getWidth, CTHPlatform.getHeight);
     view.alpha = 0;
-    [navigationController.view addSubview:view];
+    [[[CTHController sharedInstance] getNavigationController].view addSubview:view];
     [CTHHelper animation:^{
         view.alpha = 1;
     }];
@@ -333,12 +310,11 @@
     }];
 }
 -(void)closeDialogOk{
-    UINavigationController *navigationController = (UINavigationController*)[UIApplication sharedApplication].delegate.window.rootViewController;
-    UIView *view = [CTHHelper controlFromTag:TAG_VIEW_DIALOG withView:navigationController.view kind:[UIView class]];
+    UIView *view = [CTHHelper controlFromTag:TAG_VIEW_DIALOG withView:[[CTHController sharedInstance] getNavigationController].view kind:[UIView class]];
     if(view == nil)
         return;
-    CTCView *controlsView = (CTCView*)[CTHHelper controlFromTag:1 withView:view kind:[CTCView class]];
-    if(controlsView == nil || ![controlsView isKindOfClass:[CTCView class]])
+    CTHView *controlsView = (CTHView*)[CTHHelper controlFromTag:1 withView:view kind:[CTHView class]];
+    if(controlsView == nil || ![controlsView isKindOfClass:[CTHView class]])
         return;
     [controlsView setTransform:CGAffineTransformMakeScale(1.0, 1.0)];
     [CTHHelper animation:^{
@@ -356,8 +332,7 @@
 }
 -(void)showBlackDialogOk:(id)delegate Message:(NSString*)message TextOk:(NSString*)textOk{
     self.delegate = delegate;
-    UINavigationController *navigationController = (UINavigationController*)[UIApplication sharedApplication].delegate.window.rootViewController;
-    UIView *view = [CTHHelper controlFromTag:TAG_VIEW_DIALOG withView:navigationController.view kind:[UIView class]];
+    UIView *view = [CTHHelper controlFromTag:TAG_VIEW_DIALOG withView:[[CTHController sharedInstance] getNavigationController].view kind:[UIView class]];
     if(view != nil)
         [view removeFromSuperview];
     view = [CTHHelper controlFromNib:@"CTHDialog" RestorationIdentifier:@"build_black_dialog"];
@@ -365,17 +340,17 @@
         return;
     [view endEditing:YES];
     
-    CTCView *controlsView = (CTCView*)[CTHHelper controlFromTag:1 withView:view kind:[CTCView class]];
-    if(controlsView == nil || ![controlsView isKindOfClass:[CTCView class]])
+    CTHView *controlsView = (CTHView*)[CTHHelper controlFromTag:1 withView:view kind:[CTHView class]];
+    if(controlsView == nil || ![controlsView isKindOfClass:[CTHView class]])
         return;
     
-    CTCLabel *label = (CTCLabel*)[CTHHelper controlFromTag:2 withView:controlsView kind:[CTCLabel class]];
-    if(label == nil || ![label isKindOfClass:[CTCLabel class]])
+    CTHLabel *label = (CTHLabel*)[CTHHelper controlFromTag:2 withView:controlsView kind:[CTHLabel class]];
+    if(label == nil || ![label isKindOfClass:[CTHLabel class]])
         return;
     label.text = message;
     
-    CTCButton *button = (CTCButton*)[CTHHelper controlFromTag:3 withView:controlsView kind:[CTCButton class]];
-    if(button == nil || ![button isKindOfClass:[CTCButton class]])
+    CTHButton *button = (CTHButton*)[CTHHelper controlFromTag:3 withView:controlsView kind:[CTHButton class]];
+    if(button == nil || ![button isKindOfClass:[CTHButton class]])
         return;
     [button setTitle:textOk forState:UIControlStateNormal];
     [button addTarget:self action:@selector(closeDialogOk) forControlEvents:UIControlEventTouchUpInside];
@@ -394,7 +369,7 @@
     view.tag = TAG_VIEW_DIALOG;
     view.frame = CGRectMake(0, 0, CTHPlatform.getWidth, CTHPlatform.getHeight);
     view.alpha = 0;
-    [navigationController.view addSubview:view];
+    [[[CTHController sharedInstance] getNavigationController].view addSubview:view];
     [CTHHelper animation:^{
         view.alpha = 1;
     }];
@@ -406,41 +381,40 @@
 }
 -(void)showDialogYesNo:(id)delegate Title:(NSString*)title Message:(NSString*)message TextYes:(NSString*)textYes TextNo:(NSString*)textNo{
     self.delegate = delegate;
-    UINavigationController *navigationController = (UINavigationController*)[UIApplication sharedApplication].delegate.window.rootViewController;
-    UIView *view = [CTHHelper controlFromTag:TAG_VIEW_DIALOG withView:navigationController.view kind:[UIView class]];
+    UIView *view = [CTHHelper controlFromTag:TAG_VIEW_DIALOG withView:[[CTHController sharedInstance] getNavigationController].view kind:[UIView class]];
     if(view != nil)
         [view removeFromSuperview];
     view = [CTHHelper controlFromNib:@"CTHDialog" RestorationIdentifier:@"build_dialog"];
     if(view == nil)
         return;
     [view endEditing:YES];
-    CTCView *controlsView = (CTCView*)[CTHHelper controlFromTag:1 withView:view kind:[CTCView class]];
-    if(controlsView == nil || ![controlsView isKindOfClass:[CTCView class]])
+    CTHView *controlsView = (CTHView*)[CTHHelper controlFromTag:1 withView:view kind:[CTHView class]];
+    if(controlsView == nil || ![controlsView isKindOfClass:[CTHView class]])
         return;
     
-    CTCLabel *label = (CTCLabel*)[CTHHelper controlFromTag:1 withView:controlsView kind:[CTCLabel class]];
-    if(label == nil || ![label isKindOfClass:[CTCLabel class]])
+    CTHLabel *label = (CTHLabel*)[CTHHelper controlFromTag:1 withView:controlsView kind:[CTHLabel class]];
+    if(label == nil || ![label isKindOfClass:[CTHLabel class]])
         return;
     label.text = title;
     
-    label = (CTCLabel*)[CTHHelper controlFromTag:2 withView:controlsView kind:[CTCLabel class]];
-    if(label == nil || ![label isKindOfClass:[CTCLabel class]])
+    label = (CTHLabel*)[CTHHelper controlFromTag:2 withView:controlsView kind:[CTHLabel class]];
+    if(label == nil || ![label isKindOfClass:[CTHLabel class]])
         return;
     label.text = message;
     
-    CTCView *controlsView2 = (CTCView*)[CTHHelper controlFromTag:4 withView:controlsView kind:[CTCView class]];
-    if(controlsView2 == nil || ![controlsView2 isKindOfClass:[CTCView class]])
+    CTHView *controlsView2 = (CTHView*)[CTHHelper controlFromTag:4 withView:controlsView kind:[CTHView class]];
+    if(controlsView2 == nil || ![controlsView2 isKindOfClass:[CTHView class]])
         return;
     
     
-    CTCButton *button = (CTCButton*)[CTHHelper controlFromTag:1 withView:controlsView2 kind:[CTCButton class]];
-    if(button == nil || ![button isKindOfClass:[CTCButton class]])
+    CTHButton *button = (CTHButton*)[CTHHelper controlFromTag:1 withView:controlsView2 kind:[CTHButton class]];
+    if(button == nil || ![button isKindOfClass:[CTHButton class]])
         return;
     [button setTitle:textYes forState:UIControlStateNormal];
     [button addTarget:self action:@selector(closeDialogYes) forControlEvents:UIControlEventTouchUpInside];
     
-    button = (CTCButton*)[CTHHelper controlFromTag:2 withView:controlsView2 kind:[CTCButton class]];
-    if(button == nil || ![button isKindOfClass:[CTCButton class]])
+    button = (CTHButton*)[CTHHelper controlFromTag:2 withView:controlsView2 kind:[CTHButton class]];
+    if(button == nil || ![button isKindOfClass:[CTHButton class]])
         return;
     [button setTitle:textNo forState:UIControlStateNormal];
     [button addTarget:self action:@selector(closeDialogNo) forControlEvents:UIControlEventTouchUpInside];
@@ -457,12 +431,11 @@
     
     view.tag = TAG_VIEW_DIALOG;
     view.frame = CGRectMake(0, 0, CTHPlatform.getWidth, CTHPlatform.getHeight);
-    [navigationController.view addSubview:view];
+    [[[CTHController sharedInstance] getNavigationController].view addSubview:view];
     controlsView2.hidden = NO;
 }
 -(void)closeDialogYes{
-    UINavigationController *navigationController = (UINavigationController*)[UIApplication sharedApplication].delegate.window.rootViewController;
-    UIView *view = [CTHHelper controlFromTag:TAG_VIEW_DIALOG withView:navigationController.view kind:[UIView class]];
+    UIView *view = [CTHHelper controlFromTag:TAG_VIEW_DIALOG withView:[[CTHController sharedInstance] getNavigationController].view kind:[UIView class]];
     if(view != nil)
         [view removeFromSuperview];
     if (self.delegate && [self.delegate respondsToSelector:@selector(dialogYesCompleted:)]) {
@@ -470,8 +443,7 @@
     }
 }
 -(void)closeDialogNo{
-    UINavigationController *navigationController = (UINavigationController*)[UIApplication sharedApplication].delegate.window.rootViewController;
-    UIView *view = [CTHHelper controlFromTag:TAG_VIEW_DIALOG withView:navigationController.view kind:[UIView class]];
+    UIView *view = [CTHHelper controlFromTag:TAG_VIEW_DIALOG withView:[[CTHController sharedInstance] getNavigationController].view kind:[UIView class]];
     if(view != nil)
         [view removeFromSuperview];
     if (self.delegate && [self.delegate respondsToSelector:@selector(dialogNoCompleted:)]) {
@@ -479,8 +451,7 @@
     }
 }
 -(void)hideDialog{
-    UINavigationController *navigationController = (UINavigationController*)[UIApplication sharedApplication].delegate.window.rootViewController;
-    UIView *view = [CTHHelper controlFromTag:TAG_VIEW_DIALOG withView:navigationController.view kind:[UIView class]];
+    UIView *view = [CTHHelper controlFromTag:TAG_VIEW_DIALOG withView:[[CTHController sharedInstance] getNavigationController].view kind:[UIView class]];
     if(view != nil)
         [view removeFromSuperview];
 }

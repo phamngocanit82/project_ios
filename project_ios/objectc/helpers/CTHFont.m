@@ -1,4 +1,3 @@
-#import "CTHFont.h"
 @implementation CTHFont
 +(NSString*)fontName:(NSInteger)fontStyle{
     switch (fontStyle) {

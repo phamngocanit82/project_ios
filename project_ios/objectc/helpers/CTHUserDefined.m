@@ -1,20 +1,18 @@
-#import "CTHUserDefined.h"
 @implementation CTHUserDefined
 +(NSString*)LINK_DEV{
-    return @"https://nestle-milo-3.azurewebsites.net/api/milo/v3/";
-    //return @"https://nestle-milo-3-prod.asiadigitalhub.com/api/milo/v3/";
+    return @"https://...";
 }
 +(NSString*)LINK_STAG{
-    return @"https://nestle-milo-3-stag.asiadigitalhub.com/api/milo/v3/";
+    return @"https://...";
 }
 +(NSString*)LINK_STAG_AZURE{
-    return @"https://nestle-milo-3.azurewebsites.net/api/milo/v3/";
+    return @"https://...";
 }
 +(NSString*)LINK_PRO_AZURE{
-    return @"https://miloprod.azurewebsites.net/api/milo/v3/";
+    return @"https://...";
 }
 +(NSString*)LINK_PRO_APP{
-    return @"https://api.milo.com.au/api/milo/v3/";
+    return @"https://...";
 }
 +(NSString*)SECRET_KEY{
     return @"es5uObbzbqzFoUT$imW5$hvSv";

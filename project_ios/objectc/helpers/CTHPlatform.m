@@ -1,5 +1,4 @@
 #include <sys/sysctl.h>
-#import "CTHPlatform.h"
 @implementation CTHPlatform
 +(BOOL)is_iPad{
     NSString *platform = [CTHPlatform platform];

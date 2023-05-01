@@ -1,6 +1,4 @@
 #import "DGActivityIndicatorView.h"
-#import "CTHHelper.h"
-#import "CTHDGActivityIndicator.h"
 @implementation CTHDGActivityIndicator
 +(void)showIndicatorView:(UIControl*)control Color:(UIColor*)color{
     CGFloat ratio = 100/50;

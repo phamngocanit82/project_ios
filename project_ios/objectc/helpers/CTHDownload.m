@@ -1,9 +1,4 @@
 #import "SSZipArchive.h"
-#import "CTHDownload.h"
-#import "Constant.h"
-#import "CTHJson.h"
-#import "CTHCache.h"
-
 @interface CTHDownload(){
 @private
     NSURLSessionDownloadTask *download;

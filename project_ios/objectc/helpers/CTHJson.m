@@ -1,5 +1,4 @@
 #import "NSDictionary_JSONExtensions.h"
-#import "CTHJson.h"
 @implementation CTHJson
 +(NSString*)stringFromObject:(id)object{
     NSError * err;

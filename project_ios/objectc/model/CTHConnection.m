@@ -1,7 +1,3 @@
-#import "CTHConnection.h"
-#import "CTHDialog.h"
-#import "CTHLanguage.h"
-#import "CTHJson.h"
 #import "CTHBaseApi.h"
 @implementation CTHConnection
 -(id)init {
@@ -111,8 +107,8 @@
                     return;
                 }
             
-                NSString *decode = [dic valueForKey:@"data"];
-                [dic setValue:[CTHJson dictionaryWithJSONString:decode] forKey:@"data"];
+               // NSString *decode = [dic valueForKey:@"data"];
+               // [dic setValue:[CTHJson dictionaryWithJSONString:decode] forKey:@"data"];
                 [self parseString:[CTHJson stringFromObject:dic]];
             }else{
                 [self failConnection];

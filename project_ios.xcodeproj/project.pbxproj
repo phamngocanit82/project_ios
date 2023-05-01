@@ -7,28 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06128F6C29F4B83F00F7F6F2 /* NavigationController_ObjectC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06128F6B29F4B83F00F7F6F2 /* NavigationController_ObjectC.storyboard */; };
+		06128F6E29F4BAC000F7F6F2 /* Main_ObjectC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06128F6D29F4BAC000F7F6F2 /* Main_ObjectC.storyboard */; };
+		06128F7129F4BE3600F7F6F2 /* CTHController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06128F7029F4BE3600F7F6F2 /* CTHController.m */; };
+		06128FB729F4C75600F7F6F2 /* ProcessKeyboardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06128FB529F4C75600F7F6F2 /* ProcessKeyboardController.m */; };
+		06128FBA29F4C79200F7F6F2 /* RefreshTableHeaderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06128FB829F4C79200F7F6F2 /* RefreshTableHeaderController.m */; };
+		06128FBD29F4C80C00F7F6F2 /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 06128FBC29F4C80C00F7F6F2 /* EGORefreshTableHeaderView.m */; };
+		06128FC029F4C82900F7F6F2 /* LoadMoreTableFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 06128FBE29F4C82800F7F6F2 /* LoadMoreTableFooterView.m */; };
 		0633DBF129E85CBC00AD74F8 /* map_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 0633DBEE29E85CBC00AD74F8 /* map_data.json */; };
 		0633DBF229E85CBC00AD74F8 /* tables.json in Resources */ = {isa = PBXBuildFile; fileRef = 0633DBEF29E85CBC00AD74F8 /* tables.json */; };
 		0633DBF329E85CBC00AD74F8 /* PNA.db in Resources */ = {isa = PBXBuildFile; fileRef = 0633DBF029E85CBC00AD74F8 /* PNA.db */; };
 		0633DC4829E85CD300AD74F8 /* PDKeychainBindingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0633DBF529E85CD300AD74F8 /* PDKeychainBindingsController.m */; };
 		0633DC5D29E85CD300AD74F8 /* PDKeychainBindings.m in Sources */ = {isa = PBXBuildFile; fileRef = 0633DC2329E85CD300AD74F8 /* PDKeychainBindings.m */; };
-		066C1C3C29EB8C4B0055D87F /* CTCDepthScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 066C1C1B29EB8C4B0055D87F /* CTCDepthScrollView.m */; };
-		066C1C3D29EB8C4B0055D87F /* CTCVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 066C1C1D29EB8C4B0055D87F /* CTCVideo.m */; };
-		066C1C3E29EB8C4B0055D87F /* CTCCircleChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 066C1C1E29EB8C4B0055D87F /* CTCCircleChart.m */; };
-		066C1C3F29EB8C4B0055D87F /* CTCSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 066C1C1F29EB8C4B0055D87F /* CTCSwitch.m */; };
-		066C1C4029EB8C4B0055D87F /* CTCTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 066C1C2329EB8C4B0055D87F /* CTCTextField.m */; };
-		066C1C4129EB8C4B0055D87F /* CTCSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 066C1C2629EB8C4B0055D87F /* CTCSlider.m */; };
-		066C1C4229EB8C4B0055D87F /* CTCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 066C1C2729EB8C4B0055D87F /* CTCButton.m */; };
+		066C1C3C29EB8C4B0055D87F /* CTHDepthScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 066C1C1B29EB8C4B0055D87F /* CTHDepthScrollView.m */; };
+		066C1C3D29EB8C4B0055D87F /* CTHVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 066C1C1D29EB8C4B0055D87F /* CTHVideo.m */; };
+		066C1C3E29EB8C4B0055D87F /* CTHCircleChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 066C1C1E29EB8C4B0055D87F /* CTHCircleChart.m */; };
+		066C1C3F29EB8C4B0055D87F /* CTHSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 066C1C1F29EB8C4B0055D87F /* CTHSwitch.m */; };
+		066C1C4029EB8C4B0055D87F /* CTHTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 066C1C2329EB8C4B0055D87F /* CTHTextField.m */; };
+		066C1C4129EB8C4B0055D87F /* CTHSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 066C1C2629EB8C4B0055D87F /* CTHSlider.m */; };
+		066C1C4229EB8C4B0055D87F /* CTHButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 066C1C2729EB8C4B0055D87F /* CTHButton.m */; };
 		066C1C4329EB8C4B0055D87F /* RadialGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 066C1C2B29EB8C4B0055D87F /* RadialGradientView.m */; };
-		066C1C4429EB8C4B0055D87F /* CTCView.m in Sources */ = {isa = PBXBuildFile; fileRef = 066C1C2F29EB8C4B0055D87F /* CTCView.m */; };
-		066C1C4529EB8C4B0055D87F /* CTCSlideIndicate.m in Sources */ = {isa = PBXBuildFile; fileRef = 066C1C3029EB8C4B0055D87F /* CTCSlideIndicate.m */; };
-		066C1C4629EB8C4B0055D87F /* CTCLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 066C1C3229EB8C4B0055D87F /* CTCLabel.m */; };
-		066C1C4729EB8C4B0055D87F /* CTCWKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 066C1C3429EB8C4B0055D87F /* CTCWKWebView.m */; };
-		066C1C4829EB8C4B0055D87F /* CTCArcChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 066C1C3529EB8C4B0055D87F /* CTCArcChart.m */; };
-		066C1C4929EB8C4B0055D87F /* CTCPageDot.m in Sources */ = {isa = PBXBuildFile; fileRef = 066C1C3729EB8C4B0055D87F /* CTCPageDot.m */; };
-		066C1C4A29EB8C4B0055D87F /* CTCImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 066C1C3829EB8C4B0055D87F /* CTCImageView.m */; };
-		066C1C4B29EB8C4B0055D87F /* CTCLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 066C1C3929EB8C4B0055D87F /* CTCLineChart.m */; };
-		066C1C4C29EB8C4B0055D87F /* CTCProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 066C1C3A29EB8C4B0055D87F /* CTCProgressBar.m */; };
+		066C1C4429EB8C4B0055D87F /* CTHView.m in Sources */ = {isa = PBXBuildFile; fileRef = 066C1C2F29EB8C4B0055D87F /* CTHView.m */; };
+		066C1C4529EB8C4B0055D87F /* CTHSlideIndicate.m in Sources */ = {isa = PBXBuildFile; fileRef = 066C1C3029EB8C4B0055D87F /* CTHSlideIndicate.m */; };
+		066C1C4629EB8C4B0055D87F /* CTHLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 066C1C3229EB8C4B0055D87F /* CTHLabel.m */; };
+		066C1C4729EB8C4B0055D87F /* CTHWKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 066C1C3429EB8C4B0055D87F /* CTHWKWebView.m */; };
+		066C1C4829EB8C4B0055D87F /* CTHArcChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 066C1C3529EB8C4B0055D87F /* CTHArcChart.m */; };
+		066C1C4929EB8C4B0055D87F /* CTHPageDot.m in Sources */ = {isa = PBXBuildFile; fileRef = 066C1C3729EB8C4B0055D87F /* CTHPageDot.m */; };
+		066C1C4A29EB8C4B0055D87F /* CTHImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 066C1C3829EB8C4B0055D87F /* CTHImageView.m */; };
+		066C1C4B29EB8C4B0055D87F /* CTHLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 066C1C3929EB8C4B0055D87F /* CTHLineChart.m */; };
+		066C1C4C29EB8C4B0055D87F /* CTHProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 066C1C3A29EB8C4B0055D87F /* CTHProgressBar.m */; };
 		066C1C7229EB8C830055D87F /* CTHHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 066C1C5F29EB8C830055D87F /* CTHHelper.m */; };
 		066C1C7329EB8C830055D87F /* CTHFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 066C1C6029EB8C830055D87F /* CTHFont.m */; };
 		066C1C7B29EB8CB40055D87F /* CTHPlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 066C1C7A29EB8CB40055D87F /* CTHPlatform.m */; };
@@ -76,8 +83,32 @@
 		0679FF5D29E39887008CCD4A /* project_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0679FF5C29E39887008CCD4A /* project_iosTests.swift */; };
 		0679FF6729E39887008CCD4A /* project_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0679FF6629E39887008CCD4A /* project_iosUITests.swift */; };
 		0679FF6929E39887008CCD4A /* project_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0679FF6829E39887008CCD4A /* project_iosUITestsLaunchTests.swift */; };
+		06A80A8E29F6033A0074CDE5 /* PrevViewControllerSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A80A8C29F6033A0074CDE5 /* PrevViewControllerSegue.m */; };
+		06A80A9A29F607F70074CDE5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A80A9929F607F70074CDE5 /* ViewController.m */; };
+		06A80AA129F609240074CDE5 /* UserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A80A9B29F609230074CDE5 /* UserController.m */; };
+		06A80AA229F609240074CDE5 /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A80A9C29F609230074CDE5 /* SettingController.m */; };
+		06A80AA329F609240074CDE5 /* MapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A80A9F29F609230074CDE5 /* MapController.m */; };
+		06A8B34629FB00B8008AE17A /* CTHSocial.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A8B34429FB00B7008AE17A /* CTHSocial.m */; };
+		06B226EA29FF1D2200647210 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 06B226E929FF1D2200647210 /* GoogleService-Info.plist */; };
+		06B226FC29FF307500647210 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 06B226FB29FF307500647210 /* FirebaseAuth */; };
+		06B226FE29FF307500647210 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 06B226FD29FF307500647210 /* FirebaseDatabase */; };
+		06B2270029FF307500647210 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 06B226FF29FF307500647210 /* FirebaseMessaging */; };
+		06B2270229FF307500647210 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 06B2270129FF307500647210 /* FirebaseStorage */; };
+		06B2270529FF309300647210 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 06B2270429FF309300647210 /* FacebookCore */; };
+		06B2270729FF309300647210 /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 06B2270629FF309300647210 /* FacebookLogin */; };
+		06B2274D29FF3F9F00647210 /* UtilsSocial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B2274C29FF3F9F00647210 /* UtilsSocial.swift */; };
+		06BDD1FD29F97650007651CB /* CTHDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06BDD1FC29F97650007651CB /* CTHDialog.xib */; };
 		06C1B00429E8524200EE2CA2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C1B00329E8524200EE2CA2 /* CoreData.framework */; };
 		06C1B00629E8524A00EE2CA2 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C1B00529E8524A00EE2CA2 /* CoreMedia.framework */; };
+		06DC319129ECDD7400685EFF /* FrutigerLTStd-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 06DC318C29ECDD7400685EFF /* FrutigerLTStd-Black.ttf */; };
+		06DC319229ECDD7400685EFF /* FrutigerLTStd-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 06DC318D29ECDD7400685EFF /* FrutigerLTStd-Light.ttf */; };
+		06DC319329ECDD7400685EFF /* FrutigerLTStd-Roman.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 06DC318E29ECDD7400685EFF /* FrutigerLTStd-Roman.ttf */; };
+		06DC319429ECDD7400685EFF /* FrutigerLTStd-UltraBlack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 06DC318F29ECDD7400685EFF /* FrutigerLTStd-UltraBlack.ttf */; };
+		06DC319529ECDD7400685EFF /* FrutigerLTStd-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 06DC319029ECDD7400685EFF /* FrutigerLTStd-Bold.ttf */; };
+		06DC319F29ECE56100685EFF /* CTHBandA.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DC319829ECE56100685EFF /* CTHBandA.m */; };
+		06DC31A029ECE56100685EFF /* CTHBaseBand.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DC319929ECE56100685EFF /* CTHBaseBand.m */; };
+		06DC31A129ECE56100685EFF /* CTHBandC.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DC319C29ECE56100685EFF /* CTHBandC.m */; };
+		06DC31A229ECE56100685EFF /* CTHBandHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 06DC319E29ECE56100685EFF /* CTHBandHelper.m */; };
 		5E8746736D4BA2D77A6CCF39 /* Pods_project_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CA876DC1C395FC4E73672E /* Pods_project_ios.framework */; };
 		AB2572F235052AF861764ED5 /* Pods_project_ios_project_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E51CF9569B7572A4FF92BB0 /* Pods_project_ios_project_iosUITests.framework */; };
 		E8001FBF607087EAA5076086 /* Pods_project_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24EEADDF1DC69E60F2342A99 /* Pods_project_iosTests.framework */; };
@@ -101,50 +132,62 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06128F6B29F4B83F00F7F6F2 /* NavigationController_ObjectC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NavigationController_ObjectC.storyboard; sourceTree = "<group>"; };
+		06128F6D29F4BAC000F7F6F2 /* Main_ObjectC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main_ObjectC.storyboard; sourceTree = "<group>"; };
+		06128F6F29F4BE3600F7F6F2 /* CTHController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHController.h; sourceTree = "<group>"; };
+		06128F7029F4BE3600F7F6F2 /* CTHController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHController.m; sourceTree = "<group>"; };
+		06128FB529F4C75600F7F6F2 /* ProcessKeyboardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcessKeyboardController.m; sourceTree = "<group>"; };
+		06128FB629F4C75600F7F6F2 /* ProcessKeyboardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessKeyboardController.h; sourceTree = "<group>"; };
+		06128FB829F4C79200F7F6F2 /* RefreshTableHeaderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshTableHeaderController.m; sourceTree = "<group>"; };
+		06128FB929F4C79200F7F6F2 /* RefreshTableHeaderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshTableHeaderController.h; sourceTree = "<group>"; };
+		06128FBB29F4C80C00F7F6F2 /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
+		06128FBC29F4C80C00F7F6F2 /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
+		06128FBE29F4C82800F7F6F2 /* LoadMoreTableFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadMoreTableFooterView.m; sourceTree = "<group>"; };
+		06128FBF29F4C82900F7F6F2 /* LoadMoreTableFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadMoreTableFooterView.h; sourceTree = "<group>"; };
 		0633DBE829E85BE600AD74F8 /* Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		0633DBEE29E85CBC00AD74F8 /* map_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = map_data.json; sourceTree = "<group>"; };
 		0633DBEF29E85CBC00AD74F8 /* tables.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tables.json; sourceTree = "<group>"; };
 		0633DBF029E85CBC00AD74F8 /* PNA.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = PNA.db; sourceTree = "<group>"; };
 		0633DBF529E85CD300AD74F8 /* PDKeychainBindingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDKeychainBindingsController.m; sourceTree = "<group>"; };
 		0633DBF629E85CD300AD74F8 /* PDKeychainBindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDKeychainBindings.h; sourceTree = "<group>"; };
-		0633DBF729E85CD300AD74F8 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		0633DBF729E85CD300AD74F8 /* CTHConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHConstant.h; sourceTree = "<group>"; };
 		0633DC1B29E85CD300AD74F8 /* PDKeychainBindingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDKeychainBindingsController.h; sourceTree = "<group>"; };
 		0633DC2329E85CD300AD74F8 /* PDKeychainBindings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDKeychainBindings.m; sourceTree = "<group>"; };
 		0633DC6D29E85FD300AD74F8 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		066C1C1A29EB8C4B0055D87F /* CTCSlideIndicate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCSlideIndicate.h; sourceTree = "<group>"; };
-		066C1C1B29EB8C4B0055D87F /* CTCDepthScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCDepthScrollView.m; sourceTree = "<group>"; };
-		066C1C1C29EB8C4B0055D87F /* CTCView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCView.h; sourceTree = "<group>"; };
-		066C1C1D29EB8C4B0055D87F /* CTCVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCVideo.m; sourceTree = "<group>"; };
-		066C1C1E29EB8C4B0055D87F /* CTCCircleChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCCircleChart.m; sourceTree = "<group>"; };
-		066C1C1F29EB8C4B0055D87F /* CTCSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCSwitch.m; sourceTree = "<group>"; };
+		066C1C1A29EB8C4B0055D87F /* CTHSlideIndicate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHSlideIndicate.h; sourceTree = "<group>"; };
+		066C1C1B29EB8C4B0055D87F /* CTHDepthScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHDepthScrollView.m; sourceTree = "<group>"; };
+		066C1C1C29EB8C4B0055D87F /* CTHView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHView.h; sourceTree = "<group>"; };
+		066C1C1D29EB8C4B0055D87F /* CTHVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHVideo.m; sourceTree = "<group>"; };
+		066C1C1E29EB8C4B0055D87F /* CTHCircleChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHCircleChart.m; sourceTree = "<group>"; };
+		066C1C1F29EB8C4B0055D87F /* CTHSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHSwitch.m; sourceTree = "<group>"; };
 		066C1C2029EB8C4B0055D87F /* RadialGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadialGradientView.h; sourceTree = "<group>"; };
-		066C1C2129EB8C4B0055D87F /* CTCArcChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCArcChart.h; sourceTree = "<group>"; };
-		066C1C2229EB8C4B0055D87F /* CTCWKWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCWKWebView.h; sourceTree = "<group>"; };
-		066C1C2329EB8C4B0055D87F /* CTCTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCTextField.m; sourceTree = "<group>"; };
-		066C1C2429EB8C4B0055D87F /* CTCLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCLabel.h; sourceTree = "<group>"; };
-		066C1C2529EB8C4B0055D87F /* CTCPageDot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCPageDot.h; sourceTree = "<group>"; };
-		066C1C2629EB8C4B0055D87F /* CTCSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCSlider.m; sourceTree = "<group>"; };
-		066C1C2729EB8C4B0055D87F /* CTCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCButton.m; sourceTree = "<group>"; };
-		066C1C2829EB8C4B0055D87F /* CTCProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCProgressBar.h; sourceTree = "<group>"; };
-		066C1C2929EB8C4B0055D87F /* CTCImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCImageView.h; sourceTree = "<group>"; };
-		066C1C2A29EB8C4B0055D87F /* CTCLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCLineChart.h; sourceTree = "<group>"; };
+		066C1C2129EB8C4B0055D87F /* CTHArcChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHArcChart.h; sourceTree = "<group>"; };
+		066C1C2229EB8C4B0055D87F /* CTHWKWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHWKWebView.h; sourceTree = "<group>"; };
+		066C1C2329EB8C4B0055D87F /* CTHTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHTextField.m; sourceTree = "<group>"; };
+		066C1C2429EB8C4B0055D87F /* CTHLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHLabel.h; sourceTree = "<group>"; };
+		066C1C2529EB8C4B0055D87F /* CTHPageDot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHPageDot.h; sourceTree = "<group>"; };
+		066C1C2629EB8C4B0055D87F /* CTHSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHSlider.m; sourceTree = "<group>"; };
+		066C1C2729EB8C4B0055D87F /* CTHButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHButton.m; sourceTree = "<group>"; };
+		066C1C2829EB8C4B0055D87F /* CTHProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHProgressBar.h; sourceTree = "<group>"; };
+		066C1C2929EB8C4B0055D87F /* CTHImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHImageView.h; sourceTree = "<group>"; };
+		066C1C2A29EB8C4B0055D87F /* CTHLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHLineChart.h; sourceTree = "<group>"; };
 		066C1C2B29EB8C4B0055D87F /* RadialGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadialGradientView.m; sourceTree = "<group>"; };
-		066C1C2C29EB8C4B0055D87F /* CTCSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCSwitch.h; sourceTree = "<group>"; };
-		066C1C2D29EB8C4B0055D87F /* CTCCircleChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCCircleChart.h; sourceTree = "<group>"; };
-		066C1C2E29EB8C4B0055D87F /* CTCVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCVideo.h; sourceTree = "<group>"; };
-		066C1C2F29EB8C4B0055D87F /* CTCView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCView.m; sourceTree = "<group>"; };
-		066C1C3029EB8C4B0055D87F /* CTCSlideIndicate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCSlideIndicate.m; sourceTree = "<group>"; };
-		066C1C3129EB8C4B0055D87F /* CTCDepthScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCDepthScrollView.h; sourceTree = "<group>"; };
-		066C1C3229EB8C4B0055D87F /* CTCLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCLabel.m; sourceTree = "<group>"; };
-		066C1C3329EB8C4B0055D87F /* CTCTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCTextField.h; sourceTree = "<group>"; };
-		066C1C3429EB8C4B0055D87F /* CTCWKWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCWKWebView.m; sourceTree = "<group>"; };
-		066C1C3529EB8C4B0055D87F /* CTCArcChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCArcChart.m; sourceTree = "<group>"; };
-		066C1C3629EB8C4B0055D87F /* CTCSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCSlider.h; sourceTree = "<group>"; };
-		066C1C3729EB8C4B0055D87F /* CTCPageDot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCPageDot.m; sourceTree = "<group>"; };
-		066C1C3829EB8C4B0055D87F /* CTCImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCImageView.m; sourceTree = "<group>"; };
-		066C1C3929EB8C4B0055D87F /* CTCLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCLineChart.m; sourceTree = "<group>"; };
-		066C1C3A29EB8C4B0055D87F /* CTCProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTCProgressBar.m; sourceTree = "<group>"; };
-		066C1C3B29EB8C4B0055D87F /* CTCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTCButton.h; sourceTree = "<group>"; };
+		066C1C2C29EB8C4B0055D87F /* CTHSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHSwitch.h; sourceTree = "<group>"; };
+		066C1C2D29EB8C4B0055D87F /* CTHCircleChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHCircleChart.h; sourceTree = "<group>"; };
+		066C1C2E29EB8C4B0055D87F /* CTHVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHVideo.h; sourceTree = "<group>"; };
+		066C1C2F29EB8C4B0055D87F /* CTHView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHView.m; sourceTree = "<group>"; };
+		066C1C3029EB8C4B0055D87F /* CTHSlideIndicate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHSlideIndicate.m; sourceTree = "<group>"; };
+		066C1C3129EB8C4B0055D87F /* CTHDepthScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHDepthScrollView.h; sourceTree = "<group>"; };
+		066C1C3229EB8C4B0055D87F /* CTHLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHLabel.m; sourceTree = "<group>"; };
+		066C1C3329EB8C4B0055D87F /* CTHTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHTextField.h; sourceTree = "<group>"; };
+		066C1C3429EB8C4B0055D87F /* CTHWKWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHWKWebView.m; sourceTree = "<group>"; };
+		066C1C3529EB8C4B0055D87F /* CTHArcChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHArcChart.m; sourceTree = "<group>"; };
+		066C1C3629EB8C4B0055D87F /* CTHSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHSlider.h; sourceTree = "<group>"; };
+		066C1C3729EB8C4B0055D87F /* CTHPageDot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHPageDot.m; sourceTree = "<group>"; };
+		066C1C3829EB8C4B0055D87F /* CTHImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHImageView.m; sourceTree = "<group>"; };
+		066C1C3929EB8C4B0055D87F /* CTHLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHLineChart.m; sourceTree = "<group>"; };
+		066C1C3A29EB8C4B0055D87F /* CTHProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHProgressBar.m; sourceTree = "<group>"; };
+		066C1C3B29EB8C4B0055D87F /* CTHButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHButton.h; sourceTree = "<group>"; };
 		066C1C5129EB8C830055D87F /* CTHFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHFont.h; sourceTree = "<group>"; };
 		066C1C5529EB8C830055D87F /* CTHHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHHelper.h; sourceTree = "<group>"; };
 		066C1C5F29EB8C830055D87F /* CTHHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHHelper.m; sourceTree = "<group>"; };
@@ -212,8 +255,37 @@
 		0679FF6229E39887008CCD4A /* project_iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = project_iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0679FF6629E39887008CCD4A /* project_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = project_iosUITests.swift; sourceTree = "<group>"; };
 		0679FF6829E39887008CCD4A /* project_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = project_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		06A80A8C29F6033A0074CDE5 /* PrevViewControllerSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrevViewControllerSegue.m; sourceTree = "<group>"; };
+		06A80A8D29F6033A0074CDE5 /* PrevViewControllerSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrevViewControllerSegue.h; sourceTree = "<group>"; };
+		06A80A9829F607F70074CDE5 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		06A80A9929F607F70074CDE5 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		06A80A9B29F609230074CDE5 /* UserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserController.m; sourceTree = "<group>"; };
+		06A80A9C29F609230074CDE5 /* SettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingController.m; sourceTree = "<group>"; };
+		06A80A9D29F609230074CDE5 /* MapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapController.h; sourceTree = "<group>"; };
+		06A80A9E29F609230074CDE5 /* SettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingController.h; sourceTree = "<group>"; };
+		06A80A9F29F609230074CDE5 /* MapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapController.m; sourceTree = "<group>"; };
+		06A80AA029F609240074CDE5 /* UserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserController.h; sourceTree = "<group>"; };
+		06A8B34429FB00B7008AE17A /* CTHSocial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHSocial.m; sourceTree = "<group>"; };
+		06A8B34529FB00B8008AE17A /* CTHSocial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHSocial.h; sourceTree = "<group>"; };
+		06A9F07729F990A0008C0BC2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		06B226E929FF1D2200647210 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		06B2274C29FF3F9F00647210 /* UtilsSocial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilsSocial.swift; sourceTree = "<group>"; };
+		06BDD1FC29F97650007651CB /* CTHDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CTHDialog.xib; sourceTree = "<group>"; };
 		06C1B00329E8524200EE2CA2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		06C1B00529E8524A00EE2CA2 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		06DC318C29ECDD7400685EFF /* FrutigerLTStd-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FrutigerLTStd-Black.ttf"; sourceTree = "<group>"; };
+		06DC318D29ECDD7400685EFF /* FrutigerLTStd-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FrutigerLTStd-Light.ttf"; sourceTree = "<group>"; };
+		06DC318E29ECDD7400685EFF /* FrutigerLTStd-Roman.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FrutigerLTStd-Roman.ttf"; sourceTree = "<group>"; };
+		06DC318F29ECDD7400685EFF /* FrutigerLTStd-UltraBlack.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FrutigerLTStd-UltraBlack.ttf"; sourceTree = "<group>"; };
+		06DC319029ECDD7400685EFF /* FrutigerLTStd-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FrutigerLTStd-Bold.ttf"; sourceTree = "<group>"; };
+		06DC319729ECE56100685EFF /* CTHBandC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHBandC.h; sourceTree = "<group>"; };
+		06DC319829ECE56100685EFF /* CTHBandA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHBandA.m; sourceTree = "<group>"; };
+		06DC319929ECE56100685EFF /* CTHBaseBand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHBaseBand.m; sourceTree = "<group>"; };
+		06DC319A29ECE56100685EFF /* CTHBandHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHBandHelper.h; sourceTree = "<group>"; };
+		06DC319B29ECE56100685EFF /* CTHBandA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHBandA.h; sourceTree = "<group>"; };
+		06DC319C29ECE56100685EFF /* CTHBandC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHBandC.m; sourceTree = "<group>"; };
+		06DC319D29ECE56100685EFF /* CTHBaseBand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHBaseBand.h; sourceTree = "<group>"; };
+		06DC319E29ECE56100685EFF /* CTHBandHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHBandHelper.m; sourceTree = "<group>"; };
 		074FB8B083C562A8BB3263F0 /* Pods-project_ios-project_iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project_ios-project_iosUITests.release.xcconfig"; path = "Target Support Files/Pods-project_ios-project_iosUITests/Pods-project_ios-project_iosUITests.release.xcconfig"; sourceTree = "<group>"; };
 		0ADC038A8F0A95CB48914511 /* Pods-project_ios-project_iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project_ios-project_iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-project_ios-project_iosUITests/Pods-project_ios-project_iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		24EEADDF1DC69E60F2342A99 /* Pods_project_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_project_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -230,9 +302,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06B2270029FF307500647210 /* FirebaseMessaging in Frameworks */,
+				06B226FE29FF307500647210 /* FirebaseDatabase in Frameworks */,
 				06C1B00629E8524A00EE2CA2 /* CoreMedia.framework in Frameworks */,
 				5E8746736D4BA2D77A6CCF39 /* Pods_project_ios.framework in Frameworks */,
+				06B2270229FF307500647210 /* FirebaseStorage in Frameworks */,
+				06B2270729FF309300647210 /* FacebookLogin in Frameworks */,
 				06C1B00429E8524200EE2CA2 /* CoreData.framework in Frameworks */,
+				06B226FC29FF307500647210 /* FirebaseAuth in Frameworks */,
+				06B2270529FF309300647210 /* FacebookCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,9 +333,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06128FB129F4C4FD00F7F6F2 /* view controller */ = {
+			isa = PBXGroup;
+			children = (
+				06A80A9D29F609230074CDE5 /* MapController.h */,
+				06A80A9F29F609230074CDE5 /* MapController.m */,
+				06A80A9E29F609230074CDE5 /* SettingController.h */,
+				06A80A9C29F609230074CDE5 /* SettingController.m */,
+				06A80AA029F609240074CDE5 /* UserController.h */,
+				06A80A9B29F609230074CDE5 /* UserController.m */,
+			);
+			path = "view controller";
+			sourceTree = "<group>";
+		};
+		06128FB429F4C73C00F7F6F2 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				06128FBB29F4C80C00F7F6F2 /* EGORefreshTableHeaderView.h */,
+				06128FBC29F4C80C00F7F6F2 /* EGORefreshTableHeaderView.m */,
+				06128FBF29F4C82900F7F6F2 /* LoadMoreTableFooterView.h */,
+				06128FBE29F4C82800F7F6F2 /* LoadMoreTableFooterView.m */,
+				06128FB929F4C79200F7F6F2 /* RefreshTableHeaderController.h */,
+				06128FB829F4C79200F7F6F2 /* RefreshTableHeaderController.m */,
+				06128FB629F4C75600F7F6F2 /* ProcessKeyboardController.h */,
+				06128FB529F4C75600F7F6F2 /* ProcessKeyboardController.m */,
+				06A80A8D29F6033A0074CDE5 /* PrevViewControllerSegue.h */,
+				06A80A8C29F6033A0074CDE5 /* PrevViewControllerSegue.m */,
+				06A80A9829F607F70074CDE5 /* ViewController.h */,
+				06A80A9929F607F70074CDE5 /* ViewController.m */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
 		0633DBED29E85CBC00AD74F8 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				06DC318C29ECDD7400685EFF /* FrutigerLTStd-Black.ttf */,
+				06DC319029ECDD7400685EFF /* FrutigerLTStd-Bold.ttf */,
+				06DC318D29ECDD7400685EFF /* FrutigerLTStd-Light.ttf */,
+				06DC318E29ECDD7400685EFF /* FrutigerLTStd-Roman.ttf */,
+				06DC318F29ECDD7400685EFF /* FrutigerLTStd-UltraBlack.ttf */,
 				0633DBEE29E85CBC00AD74F8 /* map_data.json */,
 				0633DBEF29E85CBC00AD74F8 /* tables.json */,
 				0633DBF029E85CBC00AD74F8 /* PNA.db */,
@@ -268,10 +383,13 @@
 		0633DBF429E85CD300AD74F8 /* objectc */ = {
 			isa = PBXGroup;
 			children = (
+				06128FB429F4C73C00F7F6F2 /* base */,
+				06128FB129F4C4FD00F7F6F2 /* view controller */,
+				06DC319629ECE56100685EFF /* bluetooth */,
 				066C1CAB29EB90140055D87F /* model */,
 				066C1C4D29EB8C830055D87F /* helpers */,
 				066C1C1929EB8C4B0055D87F /* controls */,
-				0633DBF729E85CD300AD74F8 /* Constant.h */,
+				0633DBF729E85CD300AD74F8 /* CTHConstant.h */,
 				0633DC1B29E85CD300AD74F8 /* PDKeychainBindingsController.h */,
 				0633DBF529E85CD300AD74F8 /* PDKeychainBindingsController.m */,
 				0633DBF629E85CD300AD74F8 /* PDKeychainBindings.h */,
@@ -283,38 +401,38 @@
 		066C1C1929EB8C4B0055D87F /* controls */ = {
 			isa = PBXGroup;
 			children = (
-				066C1C1C29EB8C4B0055D87F /* CTCView.h */,
-				066C1C2F29EB8C4B0055D87F /* CTCView.m */,
-				066C1C2429EB8C4B0055D87F /* CTCLabel.h */,
-				066C1C3229EB8C4B0055D87F /* CTCLabel.m */,
-				066C1C3B29EB8C4B0055D87F /* CTCButton.h */,
-				066C1C2729EB8C4B0055D87F /* CTCButton.m */,
-				066C1C3329EB8C4B0055D87F /* CTCTextField.h */,
-				066C1C2329EB8C4B0055D87F /* CTCTextField.m */,
-				066C1C2929EB8C4B0055D87F /* CTCImageView.h */,
-				066C1C3829EB8C4B0055D87F /* CTCImageView.m */,
-				066C1C2229EB8C4B0055D87F /* CTCWKWebView.h */,
-				066C1C3429EB8C4B0055D87F /* CTCWKWebView.m */,
-				066C1C2C29EB8C4B0055D87F /* CTCSwitch.h */,
-				066C1C1F29EB8C4B0055D87F /* CTCSwitch.m */,
-				066C1C1A29EB8C4B0055D87F /* CTCSlideIndicate.h */,
-				066C1C3029EB8C4B0055D87F /* CTCSlideIndicate.m */,
-				066C1C3729EB8C4B0055D87F /* CTCPageDot.m */,
-				066C1C2529EB8C4B0055D87F /* CTCPageDot.h */,
-				066C1C3129EB8C4B0055D87F /* CTCDepthScrollView.h */,
-				066C1C1B29EB8C4B0055D87F /* CTCDepthScrollView.m */,
-				066C1C2E29EB8C4B0055D87F /* CTCVideo.h */,
-				066C1C1D29EB8C4B0055D87F /* CTCVideo.m */,
-				066C1C3629EB8C4B0055D87F /* CTCSlider.h */,
-				066C1C2629EB8C4B0055D87F /* CTCSlider.m */,
-				066C1C2829EB8C4B0055D87F /* CTCProgressBar.h */,
-				066C1C3A29EB8C4B0055D87F /* CTCProgressBar.m */,
-				066C1C2A29EB8C4B0055D87F /* CTCLineChart.h */,
-				066C1C3929EB8C4B0055D87F /* CTCLineChart.m */,
-				066C1C2D29EB8C4B0055D87F /* CTCCircleChart.h */,
-				066C1C1E29EB8C4B0055D87F /* CTCCircleChart.m */,
-				066C1C2129EB8C4B0055D87F /* CTCArcChart.h */,
-				066C1C3529EB8C4B0055D87F /* CTCArcChart.m */,
+				066C1C1C29EB8C4B0055D87F /* CTHView.h */,
+				066C1C2F29EB8C4B0055D87F /* CTHView.m */,
+				066C1C2429EB8C4B0055D87F /* CTHLabel.h */,
+				066C1C3229EB8C4B0055D87F /* CTHLabel.m */,
+				066C1C3B29EB8C4B0055D87F /* CTHButton.h */,
+				066C1C2729EB8C4B0055D87F /* CTHButton.m */,
+				066C1C3329EB8C4B0055D87F /* CTHTextField.h */,
+				066C1C2329EB8C4B0055D87F /* CTHTextField.m */,
+				066C1C2929EB8C4B0055D87F /* CTHImageView.h */,
+				066C1C3829EB8C4B0055D87F /* CTHImageView.m */,
+				066C1C2229EB8C4B0055D87F /* CTHWKWebView.h */,
+				066C1C3429EB8C4B0055D87F /* CTHWKWebView.m */,
+				066C1C2C29EB8C4B0055D87F /* CTHSwitch.h */,
+				066C1C1F29EB8C4B0055D87F /* CTHSwitch.m */,
+				066C1C1A29EB8C4B0055D87F /* CTHSlideIndicate.h */,
+				066C1C3029EB8C4B0055D87F /* CTHSlideIndicate.m */,
+				066C1C2529EB8C4B0055D87F /* CTHPageDot.h */,
+				066C1C3729EB8C4B0055D87F /* CTHPageDot.m */,
+				066C1C3129EB8C4B0055D87F /* CTHDepthScrollView.h */,
+				066C1C1B29EB8C4B0055D87F /* CTHDepthScrollView.m */,
+				066C1C2E29EB8C4B0055D87F /* CTHVideo.h */,
+				066C1C1D29EB8C4B0055D87F /* CTHVideo.m */,
+				066C1C3629EB8C4B0055D87F /* CTHSlider.h */,
+				066C1C2629EB8C4B0055D87F /* CTHSlider.m */,
+				066C1C2829EB8C4B0055D87F /* CTHProgressBar.h */,
+				066C1C3A29EB8C4B0055D87F /* CTHProgressBar.m */,
+				066C1C2A29EB8C4B0055D87F /* CTHLineChart.h */,
+				066C1C3929EB8C4B0055D87F /* CTHLineChart.m */,
+				066C1C2D29EB8C4B0055D87F /* CTHCircleChart.h */,
+				066C1C1E29EB8C4B0055D87F /* CTHCircleChart.m */,
+				066C1C2129EB8C4B0055D87F /* CTHArcChart.h */,
+				066C1C3529EB8C4B0055D87F /* CTHArcChart.m */,
 				066C1C2029EB8C4B0055D87F /* RadialGradientView.h */,
 				066C1C2B29EB8C4B0055D87F /* RadialGradientView.m */,
 			);
@@ -336,6 +454,8 @@
 				066C1C9829EB8EBC0055D87F /* CTHCoreData.m */,
 				066C1C8529EB8D5C0055D87F /* CTHJson.h */,
 				066C1C8629EB8D5C0055D87F /* CTHJson.m */,
+				06A8B34529FB00B8008AE17A /* CTHSocial.h */,
+				06A8B34429FB00B7008AE17A /* CTHSocial.m */,
 				066C1C8229EB8D250055D87F /* CTHCache.h */,
 				066C1C8329EB8D250055D87F /* CTHCache.m */,
 				066C1C7F29EB8CE40055D87F /* CTHUserDefined.h */,
@@ -348,6 +468,8 @@
 				066C1C6029EB8C830055D87F /* CTHFont.m */,
 				066C1C5529EB8C830055D87F /* CTHHelper.h */,
 				066C1C5F29EB8C830055D87F /* CTHHelper.m */,
+				06128F6F29F4BE3600F7F6F2 /* CTHController.h */,
+				06128F7029F4BE3600F7F6F2 /* CTHController.m */,
 			);
 			path = helpers;
 			sourceTree = "<group>";
@@ -392,6 +514,7 @@
 				066C1CC129EB90A90055D87F /* UtilsPhotoGallery.swift */,
 				066C1CC229EB90A90055D87F /* UtilsLog.swift */,
 				066C1CC329EB90A90055D87F /* UtilsValidation.swift */,
+				06B2274C29FF3F9F00647210 /* UtilsSocial.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -482,12 +605,17 @@
 				0679FF4229E39886008CCD4A /* AppDelegate.swift */,
 				0679FF4429E39886008CCD4A /* SceneDelegate.swift */,
 				0679FF4629E39886008CCD4A /* ViewController.swift */,
-				0679FF4829E39887008CCD4A /* Main.storyboard */,
+				06128F6B29F4B83F00F7F6F2 /* NavigationController_ObjectC.storyboard */,
+				06128F6D29F4BAC000F7F6F2 /* Main_ObjectC.storyboard */,
+				06BDD1FC29F97650007651CB /* CTHDialog.xib */,
 				0679FF4E29E39887008CCD4A /* Assets.xcassets */,
+				0679FF4829E39887008CCD4A /* Main.storyboard */,
 				0679FF5029E39887008CCD4A /* LaunchScreen.storyboard */,
 				0679FF5329E39887008CCD4A /* Info.plist */,
+				06B226E929FF1D2200647210 /* GoogleService-Info.plist */,
 				0679FF4B29E39887008CCD4A /* project_ios.xcdatamodeld */,
 				0633DBE829E85BE600AD74F8 /* Swift-Bridging-Header.h */,
+				06A9F07729F990A0008C0BC2 /* PrefixHeader.pch */,
 			);
 			path = project_ios;
 			sourceTree = "<group>";
@@ -507,6 +635,21 @@
 				0679FF6829E39887008CCD4A /* project_iosUITestsLaunchTests.swift */,
 			);
 			path = project_iosUITests;
+			sourceTree = "<group>";
+		};
+		06DC319629ECE56100685EFF /* bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				06DC319A29ECE56100685EFF /* CTHBandHelper.h */,
+				06DC319E29ECE56100685EFF /* CTHBandHelper.m */,
+				06DC319929ECE56100685EFF /* CTHBaseBand.m */,
+				06DC319D29ECE56100685EFF /* CTHBaseBand.h */,
+				06DC319B29ECE56100685EFF /* CTHBandA.h */,
+				06DC319829ECE56100685EFF /* CTHBandA.m */,
+				06DC319729ECE56100685EFF /* CTHBandC.h */,
+				06DC319C29ECE56100685EFF /* CTHBandC.m */,
+			);
+			path = bluetooth;
 			sourceTree = "<group>";
 		};
 		55DB64D3E9863607E47AAD0B /* Frameworks */ = {
@@ -552,6 +695,14 @@
 			dependencies = (
 			);
 			name = project_ios;
+			packageProductDependencies = (
+				06B226FB29FF307500647210 /* FirebaseAuth */,
+				06B226FD29FF307500647210 /* FirebaseDatabase */,
+				06B226FF29FF307500647210 /* FirebaseMessaging */,
+				06B2270129FF307500647210 /* FirebaseStorage */,
+				06B2270429FF309300647210 /* FacebookCore */,
+				06B2270629FF309300647210 /* FacebookLogin */,
+			);
 			productName = project_ios;
 			productReference = 0679FF3F29E39886008CCD4A /* project_ios.app */;
 			productType = "com.apple.product-type.application";
@@ -626,6 +777,10 @@
 				Base,
 			);
 			mainGroup = 0679FF3629E39886008CCD4A;
+			packageReferences = (
+				06B226FA29FF307500647210 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				06B2270329FF309300647210 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+			);
 			productRefGroup = 0679FF4029E39886008CCD4A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -643,11 +798,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				0633DBF129E85CBC00AD74F8 /* map_data.json in Resources */,
+				06BDD1FD29F97650007651CB /* CTHDialog.xib in Resources */,
+				06B226EA29FF1D2200647210 /* GoogleService-Info.plist in Resources */,
+				06DC319129ECDD7400685EFF /* FrutigerLTStd-Black.ttf in Resources */,
+				06128F6E29F4BAC000F7F6F2 /* Main_ObjectC.storyboard in Resources */,
+				06DC319329ECDD7400685EFF /* FrutigerLTStd-Roman.ttf in Resources */,
 				0679FF5229E39887008CCD4A /* LaunchScreen.storyboard in Resources */,
+				06DC319229ECDD7400685EFF /* FrutigerLTStd-Light.ttf in Resources */,
 				0679FF4F29E39887008CCD4A /* Assets.xcassets in Resources */,
 				0633DBF229E85CBC00AD74F8 /* tables.json in Resources */,
+				06DC319529ECDD7400685EFF /* FrutigerLTStd-Bold.ttf in Resources */,
 				0679FF4A29E39887008CCD4A /* Main.storyboard in Resources */,
 				0633DBF329E85CBC00AD74F8 /* PNA.db in Resources */,
+				06128F6C29F4B83F00F7F6F2 /* NavigationController_ObjectC.storyboard in Resources */,
+				06DC319429ECDD7400685EFF /* FrutigerLTStd-UltraBlack.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -745,61 +909,77 @@
 				0679FF4D29E39887008CCD4A /* project_ios.xcdatamodeld in Sources */,
 				066C1C7E29EB8CC40055D87F /* CTHLanguage.m in Sources */,
 				066C1CB529EB90140055D87F /* CTHBaseConnection.m in Sources */,
+				06128F7129F4BE3600F7F6F2 /* CTHController.m in Sources */,
+				06128FBA29F4C79200F7F6F2 /* RefreshTableHeaderController.m in Sources */,
+				06A80AA129F609240074CDE5 /* UserController.m in Sources */,
 				0679FF4329E39886008CCD4A /* AppDelegate.swift in Sources */,
 				066C1CE929EB90A90055D87F /* DownloadService.swift in Sources */,
 				066C1CDF29EB90A90055D87F /* ExtensionUIDevice.swift in Sources */,
 				066C1CE829EB90A90055D87F /* AlamofireService.swift in Sources */,
-				066C1C4629EB8C4B0055D87F /* CTCLabel.m in Sources */,
-				066C1C4229EB8C4B0055D87F /* CTCButton.m in Sources */,
+				066C1C4629EB8C4B0055D87F /* CTHLabel.m in Sources */,
+				066C1C4229EB8C4B0055D87F /* CTHButton.m in Sources */,
 				066C1CE029EB90A90055D87F /* ExtensionUIButton.swift in Sources */,
-				066C1C4929EB8C4B0055D87F /* CTCPageDot.m in Sources */,
+				066C1C4929EB8C4B0055D87F /* CTHPageDot.m in Sources */,
 				066C1CD529EB90A90055D87F /* Global.swift in Sources */,
 				066C1CE429EB90A90055D87F /* ExtensionUIViewController.swift in Sources */,
 				066C1CAA29EB8FF40055D87F /* CTHDialog.m in Sources */,
-				066C1C4129EB8C4B0055D87F /* CTCSlider.m in Sources */,
+				06A80A9A29F607F70074CDE5 /* ViewController.m in Sources */,
+				066C1C4129EB8C4B0055D87F /* CTHSlider.m in Sources */,
 				066C1C8129EB8CE40055D87F /* CTHUserDefined.m in Sources */,
 				066C1CE729EB90A90055D87F /* SQLiteService.swift in Sources */,
 				066C1C7229EB8C830055D87F /* CTHHelper.m in Sources */,
+				06128FBD29F4C80C00F7F6F2 /* EGORefreshTableHeaderView.m in Sources */,
 				066C1C9A29EB8EBC0055D87F /* CTHCoreData.m in Sources */,
-				066C1C4C29EB8C4B0055D87F /* CTCProgressBar.m in Sources */,
+				066C1C4C29EB8C4B0055D87F /* CTHProgressBar.m in Sources */,
 				066C1CDA29EB90A90055D87F /* UtilsKeychain.swift in Sources */,
 				066C1CE129EB90A90055D87F /* ExtensionUIFont.swift in Sources */,
-				066C1C4029EB8C4B0055D87F /* CTCTextField.m in Sources */,
+				066C1C4029EB8C4B0055D87F /* CTHTextField.m in Sources */,
 				066C1C7B29EB8CB40055D87F /* CTHPlatform.m in Sources */,
-				066C1C4829EB8C4B0055D87F /* CTCArcChart.m in Sources */,
+				066C1C4829EB8C4B0055D87F /* CTHArcChart.m in Sources */,
 				0633DC4829E85CD300AD74F8 /* PDKeychainBindingsController.m in Sources */,
+				06B2274D29FF3F9F00647210 /* UtilsSocial.swift in Sources */,
 				0679FF4529E39886008CCD4A /* SceneDelegate.swift in Sources */,
 				066C1CB629EB90140055D87F /* CTHBaseApi.m in Sources */,
+				06A80AA329F609240074CDE5 /* MapController.m in Sources */,
 				066C1CA029EB8F2C0055D87F /* CTHDGActivityIndicator.m in Sources */,
+				06128FC029F4C82900F7F6F2 /* LoadMoreTableFooterView.m in Sources */,
+				06DC31A229ECE56100685EFF /* CTHBandHelper.m in Sources */,
 				066C1CB729EB90140055D87F /* CTHConnection.m in Sources */,
 				066C1CB429EB90140055D87F /* CTHSqlite.m in Sources */,
 				066C1CDC29EB90A90055D87F /* UtilsPhotoGallery.swift in Sources */,
+				06A80A8E29F6033A0074CDE5 /* PrevViewControllerSegue.m in Sources */,
 				0633DC5D29E85CD300AD74F8 /* PDKeychainBindings.m in Sources */,
-				066C1C4529EB8C4B0055D87F /* CTCSlideIndicate.m in Sources */,
+				066C1C4529EB8C4B0055D87F /* CTHSlideIndicate.m in Sources */,
 				066C1CD929EB90A90055D87F /* UtilsCoreData.swift in Sources */,
 				066C1C4329EB8C4B0055D87F /* RadialGradientView.m in Sources */,
 				066C1CD629EB90A90055D87F /* UtilsAppSetting.swift in Sources */,
-				066C1C3F29EB8C4B0055D87F /* CTCSwitch.m in Sources */,
-				066C1C4B29EB8C4B0055D87F /* CTCLineChart.m in Sources */,
+				06128FB729F4C75600F7F6F2 /* ProcessKeyboardController.m in Sources */,
+				066C1C3F29EB8C4B0055D87F /* CTHSwitch.m in Sources */,
+				066C1C4B29EB8C4B0055D87F /* CTHLineChart.m in Sources */,
 				066C1CE229EB90A90055D87F /* ExtensionString.swift in Sources */,
-				066C1C4429EB8C4B0055D87F /* CTCView.m in Sources */,
+				06DC31A129ECE56100685EFF /* CTHBandC.m in Sources */,
+				06A8B34629FB00B8008AE17A /* CTHSocial.m in Sources */,
+				066C1C4429EB8C4B0055D87F /* CTHView.m in Sources */,
 				066C1C8429EB8D250055D87F /* CTHCache.m in Sources */,
+				06DC31A029ECE56100685EFF /* CTHBaseBand.m in Sources */,
 				066C1C8729EB8D5C0055D87F /* CTHJson.m in Sources */,
 				066C1C9929EB8EBC0055D87F /* CTHCamera.m in Sources */,
-				066C1C3D29EB8C4B0055D87F /* CTCVideo.m in Sources */,
+				06DC319F29ECE56100685EFF /* CTHBandA.m in Sources */,
+				066C1C3D29EB8C4B0055D87F /* CTHVideo.m in Sources */,
 				066C1C7329EB8C830055D87F /* CTHFont.m in Sources */,
 				066C1CD829EB90A90055D87F /* UtilsCrypto.swift in Sources */,
 				066C1CE529EB90A90055D87F /* LanguageService.swift in Sources */,
-				066C1C4A29EB8C4B0055D87F /* CTCImageView.m in Sources */,
+				066C1C4A29EB8C4B0055D87F /* CTHImageView.m in Sources */,
 				066C1CE629EB90A90055D87F /* ConnectService.swift in Sources */,
-				066C1C3E29EB8C4B0055D87F /* CTCCircleChart.m in Sources */,
+				066C1C3E29EB8C4B0055D87F /* CTHCircleChart.m in Sources */,
 				066C1C9D29EB8EE90055D87F /* CTHDownload.m in Sources */,
 				066C1CDE29EB90A90055D87F /* UtilsValidation.swift in Sources */,
 				066C1CD729EB90A90055D87F /* SwiftTutorial.swift in Sources */,
 				066C1CDD29EB90A90055D87F /* UtilsLog.swift in Sources */,
 				066C1CE329EB90A90055D87F /* ExtensionUILabel.swift in Sources */,
-				066C1C4729EB8C4B0055D87F /* CTCWKWebView.m in Sources */,
-				066C1C3C29EB8C4B0055D87F /* CTCDepthScrollView.m in Sources */,
+				066C1C4729EB8C4B0055D87F /* CTHWKWebView.m in Sources */,
+				06A80AA229F609240074CDE5 /* SettingController.m in Sources */,
+				066C1C3C29EB8C4B0055D87F /* CTHDepthScrollView.m in Sources */,
 				066C1CDB29EB90A90055D87F /* UtilsDownload.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -906,7 +1086,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -960,7 +1140,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -978,14 +1158,24 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = project_ios/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "to connect devices";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "to connect devices";
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "to update your plan";
+				INFOPLIST_KEY_NSCameraUsageDescription = " to take photo for avatars";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "to get information from App";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "to update avatar of users";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1007,14 +1197,24 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = project_ios/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "to connect devices";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "to connect devices";
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "to update your plan";
+				INFOPLIST_KEY_NSCameraUsageDescription = " to take photo for avatars";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "to get information from App";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "to update avatar of users";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1144,6 +1344,58 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		06B226FA29FF307500647210 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		06B2270329FF309300647210 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		06B226FB29FF307500647210 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06B226FA29FF307500647210 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		06B226FD29FF307500647210 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06B226FA29FF307500647210 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		06B226FF29FF307500647210 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06B226FA29FF307500647210 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		06B2270129FF307500647210 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06B226FA29FF307500647210 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		06B2270429FF309300647210 /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06B2270329FF309300647210 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+		06B2270629FF309300647210 /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06B2270329FF309300647210 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		0679FF4B29E39887008CCD4A /* project_ios.xcdatamodeld */ = {

@@ -1,6 +1,4 @@
 #import <MobileCoreServices/UTCoreTypes.h>
-#import "CTHLanguage.h"
-#import "CTHCamera.h"
 @implementation CTHCamera
 +(instancetype)sharedInstance{
     static id sharedInstance = nil;
