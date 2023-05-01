@@ -7,26 +7,33 @@
       <dict>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>fb746008883871106</string>
+        <string>fb$(FACEBOOK_APP_ID)</string>
+        <string>twitterkit-$(TWITTER_CONSUMER_KEY)</string>
       </array>
       </dict>
     </array>
     <key>FacebookAdvertiserIDCollectionEnabled</key>
     <false/>
     <key>FacebookAppID</key>
-    <string>746008883871106</string>
+    <string>$(FACEBOOK_APP_ID)</string>
     <key>FacebookClientToken</key>
-    <string>9aa5d76cdeb6ceeeb16bff74a4542190</string>
+    <string>$(FACEBOOK_CLIENT_TOKEN)</string>
     <key>FacebookDisplayName</key>
-    <string>projectios</string>
+    <string>$(FACEBOOK_DISPLAY_NAME)</string>
+    <key>TwitterConsumerKey</key>
+    <string>$(TWITTER_CONSUMER_KEY)</string>
+    <key>TwitterConsumerSecret</key>
+    <string>$(TWITTER_CONSUMER_SECRET)</string>
     <key>LSApplicationQueriesSchemes</key>
     <array>
-      <string>googlechromes</string>
-      <string>comgooglemaps</string>
-      <string>fbapi</string>
-      <string>fb-messenger-api</string>
-      <string>fbauth2</string>
-      <string>fbshareextension</string>
+        <string>googlechromes</string>
+        <string>comgooglemaps</string>
+        <string>fbapi</string>
+        <string>fb-messenger-api</string>
+        <string>fbauth2</string>
+        <string>fbshareextension</string>
+        <string>twitter</string>
+        <string>twitterauth</string>
     </array>
 	<key>FacebookAutoLogAppEventsEnabled</key>
 	<string>TRUE</string>

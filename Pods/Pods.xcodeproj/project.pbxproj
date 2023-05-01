@@ -357,11 +357,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		190F232F4CEE111486AEF7CC5EDA4182 /* Release */ = {
+		1D7D6D0C5329A62CB3F92AB787B9E976 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 207E3FEF790C24AA519C9967E99BA7C9 /* Pods-project_ios.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					"x86_64-apple-ios-simulator",
+				);
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -395,11 +399,15 @@
 			};
 			name = Release;
 		};
-		8D8CD6BD0D56C5260075EF95665BDDD9 /* Debug */ = {
+		220F13DDBE3ABA3E3B833CEAA616F0D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8040603D29D652FC63E4A70ABE8E5108 /* Pods-project_ios.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					"x86_64-apple-ios-simulator",
+				);
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -743,8 +751,8 @@
 		BB6374C1B6DCFA25D8CB51F62BBB0247 /* Build configuration list for PBXNativeTarget "Pods-project_ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8D8CD6BD0D56C5260075EF95665BDDD9 /* Debug */,
-				190F232F4CEE111486AEF7CC5EDA4182 /* Release */,
+				220F13DDBE3ABA3E3B833CEAA616F0D6 /* Debug */,
+				1D7D6D0C5329A62CB3F92AB787B9E976 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -9,7 +9,8 @@ import UIKit
 import CoreData
 import GoogleMaps
 import FirebaseCore
-import FacebookCore
+import FBSDKCoreKit
+import TwitterKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
@@ -22,11 +23,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             application,
             didFinishLaunchingWithOptions: launchOptions
         )
+        
+        let TwitterConsumerKey:String = Bundle.main.infoDictionary?["TwitterConsumerKey"] as! String
+        let TwitterConsumerSecret:String = Bundle.main.infoDictionary?["TwitterConsumerSecret"] as! String
+        
+        TWTRTwitter.sharedInstance().start(withConsumerKey: TwitterConsumerKey, consumerSecret: TwitterConsumerSecret)
         return true
     }
-    func application(_ app: UIApplication, open url: URL, sourceApplication: String?, annotation: Any?) -> Bool{
-        return true;
-}
     func application(
             _ app: UIApplication,
             open url: URL,
@@ -38,6 +41,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
                 annotation: options[UIApplication.OpenURLOptionsKey.annotation]
             )
+            return TWTRTwitter.sharedInstance().application(app, open: url, options: options)
         }  
         // MARK: UISceneSession Lifecycle
         

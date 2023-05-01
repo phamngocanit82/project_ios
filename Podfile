@@ -4,7 +4,34 @@ platform :ios, '13.0'
 target 'project_ios' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+  pod 'GoogleMaps'
+  # Pods for project_ios
+  #swift
+  pod 'FirebaseCore'
+  pod 'FirebaseAuth'
+  pod 'FirebaseDatabase'
+  pod 'FirebaseMessaging'
+  pod 'FirebaseStorage'
   
+  pod 'FBSDKCoreKit'
+  pod 'FBSDKLoginKit'
+  pod 'TwitterKit'
+  pod 'InstagramKit'
+  pod 'SQLCipher'
+  pod 'SSZipArchive'
+  pod 'TouchJSON'
+  pod 'GDataXML-HTML'
+  pod 'AESCrypt'
+  pod 'CryptoSwift'
+  pod 'NSHash'
+  pod 'Alamofire'
+  pod 'SwiftLint'
+  pod 'Kingfisher'
+  pod 'Realm'
+  #object c
+  pod 'DTTJailbreakDetection'
+  pod 'SDWebImage'
+  pod 'DGActivityIndicatorView'
   target 'project_iosTests' do
     inherit! :search_paths
     # Pods for testing

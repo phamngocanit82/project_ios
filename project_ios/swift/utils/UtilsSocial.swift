@@ -1,5 +1,6 @@
 import Foundation
-import FacebookLogin
+import FBSDKLoginKit
+import TwitterKit
 struct UtilsSocial {
     static public func loginFacebook(_ viewController: UIViewController) {
         let loginManager = LoginManager()
@@ -29,5 +30,20 @@ struct UtilsSocial {
             }
         }
     }
-    
+    static public func loginTwitter(_ viewController: UIViewController) {
+        TWTRTwitter.sharedInstance().logIn(with: viewController) { (session, error) in
+            if (session != nil) {
+                print("signed in as \(session!.userName)");
+            } else {
+                print("error: \(error!.localizedDescription)");
+            }
+        }
+        /*TWTRTwitter.sharedInstance().logIn(with:viewController completion: { (session, error) in
+            if (session != nil) {
+                print("signed in as \(session!.userName)");
+            } else {
+                print("error: \(error!.localizedDescription)");
+            }
+        })*/
+    }
 }

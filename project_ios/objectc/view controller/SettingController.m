@@ -3,7 +3,7 @@
 @implementation SettingController
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [CTHSocial loginFaceBook:self];
+    [CTHSocial shareAppToFacebook:self];
     [self loadData];
 }
 -(void)viewDidDisappear:(BOOL)animated{

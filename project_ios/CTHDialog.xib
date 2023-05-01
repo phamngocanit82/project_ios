@@ -392,6 +392,9 @@
         </view>
     </objects>
     <designables>
+        <designable name="04g-hc-D5u">
+            <size key="intrinsicContentSize" width="217" height="18"/>
+        </designable>
         <designable name="AbK-By-rzY">
             <size key="intrinsicContentSize" width="30" height="12"/>
         </designable>
@@ -404,6 +407,12 @@
         <designable name="dEY-IT-cvu">
             <size key="intrinsicContentSize" width="30" height="12"/>
         </designable>
+        <designable name="dIl-1h-Ddn">
+            <size key="intrinsicContentSize" width="78.5" height="18"/>
+        </designable>
+        <designable name="fzU-Jz-Lgv">
+            <size key="intrinsicContentSize" width="543" height="20.5"/>
+        </designable>
         <designable name="gp6-XV-DQA">
             <size key="intrinsicContentSize" width="30" height="12"/>
         </designable>
@@ -415,6 +424,9 @@
         </designable>
         <designable name="tac-Kk-Set">
             <size key="intrinsicContentSize" width="30" height="12"/>
+        </designable>
+        <designable name="vQw-Hh-JPz">
+            <size key="intrinsicContentSize" width="36.5" height="23"/>
         </designable>
         <designable name="xzZ-rT-Hcm">
             <size key="intrinsicContentSize" width="30" height="12"/>
