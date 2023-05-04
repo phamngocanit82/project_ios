@@ -85,12 +85,18 @@
 		0679FF6929E39887008CCD4A /* project_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0679FF6829E39887008CCD4A /* project_iosUITestsLaunchTests.swift */; };
 		06A80A8E29F6033A0074CDE5 /* PrevViewControllerSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A80A8C29F6033A0074CDE5 /* PrevViewControllerSegue.m */; };
 		06A80A9A29F607F70074CDE5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A80A9929F607F70074CDE5 /* ViewController.m */; };
-		06A80AA129F609240074CDE5 /* UserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A80A9B29F609230074CDE5 /* UserController.m */; };
+		06A80AA129F609240074CDE5 /* PopulationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A80A9B29F609230074CDE5 /* PopulationController.m */; };
 		06A80AA229F609240074CDE5 /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A80A9C29F609230074CDE5 /* SettingController.m */; };
 		06A80AA329F609240074CDE5 /* MapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A80A9F29F609230074CDE5 /* MapController.m */; };
 		06A8B34629FB00B8008AE17A /* CTHSocial.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A8B34429FB00B7008AE17A /* CTHSocial.m */; };
 		06B226EA29FF1D2200647210 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 06B226E929FF1D2200647210 /* GoogleService-Info.plist */; };
 		06B2274D29FF3F9F00647210 /* UtilsSocial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B2274C29FF3F9F00647210 /* UtilsSocial.swift */; };
+		06B398842A004E64006B62D1 /* PopulationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B398822A004E64006B62D1 /* PopulationCell.m */; };
+		06B3988B2A00539D006B62D1 /* PopulationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B3988A2A00539D006B62D1 /* PopulationModel.m */; };
+		06B3988E2A0054D2006B62D1 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B3988D2A0054D2006B62D1 /* BaseModel.m */; };
+		06B7C5122A0418A700D0BCA9 /* SettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B7C5112A0418A700D0BCA9 /* SettingCell.m */; };
+		06B7C5152A041DC900D0BCA9 /* NavigationController_Swift.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B7C5132A041DC900D0BCA9 /* NavigationController_Swift.storyboard */; };
+		06B7C5162A041DC900D0BCA9 /* Main_Swift.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B7C5142A041DC900D0BCA9 /* Main_Swift.storyboard */; };
 		06B968062A002FAD009A0360 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06B968052A002FAC009A0360 /* Social.framework */; };
 		06BDD1FD29F97650007651CB /* CTHDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06BDD1FC29F97650007651CB /* CTHDialog.xib */; };
 		06C1B00429E8524200EE2CA2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C1B00329E8524200EE2CA2 /* CoreData.framework */; };
@@ -254,17 +260,27 @@
 		06A80A8D29F6033A0074CDE5 /* PrevViewControllerSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrevViewControllerSegue.h; sourceTree = "<group>"; };
 		06A80A9829F607F70074CDE5 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		06A80A9929F607F70074CDE5 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		06A80A9B29F609230074CDE5 /* UserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserController.m; sourceTree = "<group>"; };
+		06A80A9B29F609230074CDE5 /* PopulationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopulationController.m; sourceTree = "<group>"; };
 		06A80A9C29F609230074CDE5 /* SettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingController.m; sourceTree = "<group>"; };
 		06A80A9D29F609230074CDE5 /* MapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapController.h; sourceTree = "<group>"; };
 		06A80A9E29F609230074CDE5 /* SettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingController.h; sourceTree = "<group>"; };
 		06A80A9F29F609230074CDE5 /* MapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapController.m; sourceTree = "<group>"; };
-		06A80AA029F609240074CDE5 /* UserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserController.h; sourceTree = "<group>"; };
+		06A80AA029F609240074CDE5 /* PopulationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopulationController.h; sourceTree = "<group>"; };
 		06A8B34429FB00B7008AE17A /* CTHSocial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHSocial.m; sourceTree = "<group>"; };
 		06A8B34529FB00B8008AE17A /* CTHSocial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHSocial.h; sourceTree = "<group>"; };
 		06A9F07729F990A0008C0BC2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		06B226E929FF1D2200647210 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		06B2274C29FF3F9F00647210 /* UtilsSocial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilsSocial.swift; sourceTree = "<group>"; };
+		06B398822A004E64006B62D1 /* PopulationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopulationCell.m; sourceTree = "<group>"; };
+		06B398832A004E64006B62D1 /* PopulationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopulationCell.h; sourceTree = "<group>"; };
+		06B398892A00539D006B62D1 /* PopulationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopulationModel.h; sourceTree = "<group>"; };
+		06B3988A2A00539D006B62D1 /* PopulationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopulationModel.m; sourceTree = "<group>"; };
+		06B3988C2A0054D2006B62D1 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		06B3988D2A0054D2006B62D1 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		06B7C5102A0418A700D0BCA9 /* SettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingCell.h; sourceTree = "<group>"; };
+		06B7C5112A0418A700D0BCA9 /* SettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingCell.m; sourceTree = "<group>"; };
+		06B7C5132A041DC900D0BCA9 /* NavigationController_Swift.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NavigationController_Swift.storyboard; sourceTree = "<group>"; };
+		06B7C5142A041DC900D0BCA9 /* Main_Swift.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_Swift.storyboard; sourceTree = "<group>"; };
 		06B968052A002FAC009A0360 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		06BDD1FC29F97650007651CB /* CTHDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CTHDialog.xib; sourceTree = "<group>"; };
 		06C1B00329E8524200EE2CA2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -331,8 +347,12 @@
 				06A80A9F29F609230074CDE5 /* MapController.m */,
 				06A80A9E29F609230074CDE5 /* SettingController.h */,
 				06A80A9C29F609230074CDE5 /* SettingController.m */,
-				06A80AA029F609240074CDE5 /* UserController.h */,
-				06A80A9B29F609230074CDE5 /* UserController.m */,
+				06B7C5102A0418A700D0BCA9 /* SettingCell.h */,
+				06B7C5112A0418A700D0BCA9 /* SettingCell.m */,
+				06A80AA029F609240074CDE5 /* PopulationController.h */,
+				06A80A9B29F609230074CDE5 /* PopulationController.m */,
+				06B398832A004E64006B62D1 /* PopulationCell.h */,
+				06B398822A004E64006B62D1 /* PopulationCell.m */,
 			);
 			path = "view controller";
 			sourceTree = "<group>";
@@ -468,6 +488,7 @@
 		066C1CAB29EB90140055D87F /* model */ = {
 			isa = PBXGroup;
 			children = (
+				06B398882A005389006B62D1 /* items */,
 				066C1CB129EB90140055D87F /* CTHSqlite.h */,
 				066C1CAC29EB90140055D87F /* CTHSqlite.m */,
 				066C1CAE29EB90140055D87F /* CTHBaseApi.h */,
@@ -598,6 +619,8 @@
 				0679FF4629E39886008CCD4A /* ViewController.swift */,
 				06128F6B29F4B83F00F7F6F2 /* NavigationController_ObjectC.storyboard */,
 				06128F6D29F4BAC000F7F6F2 /* Main_ObjectC.storyboard */,
+				06B7C5132A041DC900D0BCA9 /* NavigationController_Swift.storyboard */,
+				06B7C5142A041DC900D0BCA9 /* Main_Swift.storyboard */,
 				06BDD1FC29F97650007651CB /* CTHDialog.xib */,
 				0679FF4E29E39887008CCD4A /* Assets.xcassets */,
 				0679FF4829E39887008CCD4A /* Main.storyboard */,
@@ -626,6 +649,17 @@
 				0679FF6829E39887008CCD4A /* project_iosUITestsLaunchTests.swift */,
 			);
 			path = project_iosUITests;
+			sourceTree = "<group>";
+		};
+		06B398882A005389006B62D1 /* items */ = {
+			isa = PBXGroup;
+			children = (
+				06B3988C2A0054D2006B62D1 /* BaseModel.h */,
+				06B3988D2A0054D2006B62D1 /* BaseModel.m */,
+				06B398892A00539D006B62D1 /* PopulationModel.h */,
+				06B3988A2A00539D006B62D1 /* PopulationModel.m */,
+			);
+			path = items;
 			sourceTree = "<group>";
 		};
 		06DC319629ECE56100685EFF /* bluetooth */ = {
@@ -782,6 +816,7 @@
 				06B226EA29FF1D2200647210 /* GoogleService-Info.plist in Resources */,
 				06DC319129ECDD7400685EFF /* FrutigerLTStd-Black.ttf in Resources */,
 				06128F6E29F4BAC000F7F6F2 /* Main_ObjectC.storyboard in Resources */,
+				06B7C5162A041DC900D0BCA9 /* Main_Swift.storyboard in Resources */,
 				06DC319329ECDD7400685EFF /* FrutigerLTStd-Roman.ttf in Resources */,
 				0679FF5229E39887008CCD4A /* LaunchScreen.storyboard in Resources */,
 				06DC319229ECDD7400685EFF /* FrutigerLTStd-Light.ttf in Resources */,
@@ -789,6 +824,7 @@
 				0633DBF229E85CBC00AD74F8 /* tables.json in Resources */,
 				06DC319529ECDD7400685EFF /* FrutigerLTStd-Bold.ttf in Resources */,
 				0679FF4A29E39887008CCD4A /* Main.storyboard in Resources */,
+				06B7C5152A041DC900D0BCA9 /* NavigationController_Swift.storyboard in Resources */,
 				0633DBF329E85CBC00AD74F8 /* PNA.db in Resources */,
 				06128F6C29F4B83F00F7F6F2 /* NavigationController_ObjectC.storyboard in Resources */,
 				06DC319429ECDD7400685EFF /* FrutigerLTStd-UltraBlack.ttf in Resources */,
@@ -891,7 +927,7 @@
 				066C1CB529EB90140055D87F /* CTHBaseConnection.m in Sources */,
 				06128F7129F4BE3600F7F6F2 /* CTHController.m in Sources */,
 				06128FBA29F4C79200F7F6F2 /* RefreshTableHeaderController.m in Sources */,
-				06A80AA129F609240074CDE5 /* UserController.m in Sources */,
+				06A80AA129F609240074CDE5 /* PopulationController.m in Sources */,
 				0679FF4329E39886008CCD4A /* AppDelegate.swift in Sources */,
 				066C1CE929EB90A90055D87F /* DownloadService.swift in Sources */,
 				066C1CDF29EB90A90055D87F /* ExtensionUIDevice.swift in Sources */,
@@ -905,6 +941,7 @@
 				066C1CAA29EB8FF40055D87F /* CTHDialog.m in Sources */,
 				06A80A9A29F607F70074CDE5 /* ViewController.m in Sources */,
 				066C1C4129EB8C4B0055D87F /* CTHSlider.m in Sources */,
+				06B398842A004E64006B62D1 /* PopulationCell.m in Sources */,
 				066C1C8129EB8CE40055D87F /* CTHUserDefined.m in Sources */,
 				066C1CE729EB90A90055D87F /* SQLiteService.swift in Sources */,
 				066C1C7229EB8C830055D87F /* CTHHelper.m in Sources */,
@@ -913,6 +950,7 @@
 				066C1C4C29EB8C4B0055D87F /* CTHProgressBar.m in Sources */,
 				066C1CDA29EB90A90055D87F /* UtilsKeychain.swift in Sources */,
 				066C1CE129EB90A90055D87F /* ExtensionUIFont.swift in Sources */,
+				06B3988E2A0054D2006B62D1 /* BaseModel.m in Sources */,
 				066C1C4029EB8C4B0055D87F /* CTHTextField.m in Sources */,
 				066C1C7B29EB8CB40055D87F /* CTHPlatform.m in Sources */,
 				066C1C4829EB8C4B0055D87F /* CTHArcChart.m in Sources */,
@@ -920,6 +958,8 @@
 				06B2274D29FF3F9F00647210 /* UtilsSocial.swift in Sources */,
 				0679FF4529E39886008CCD4A /* SceneDelegate.swift in Sources */,
 				066C1CB629EB90140055D87F /* CTHBaseApi.m in Sources */,
+				06B3988B2A00539D006B62D1 /* PopulationModel.m in Sources */,
+				06B7C5122A0418A700D0BCA9 /* SettingCell.m in Sources */,
 				06A80AA329F609240074CDE5 /* MapController.m in Sources */,
 				066C1CA029EB8F2C0055D87F /* CTHDGActivityIndicator.m in Sources */,
 				06128FC029F4C82900F7F6F2 /* LoadMoreTableFooterView.m in Sources */,

@@ -50,6 +50,17 @@
         [facebookViewController setInitialText:@"facebook"];
         [facebookViewController addURL:[NSURL URLWithString:@"https://facebook.com"]];
         [facebookViewController addImage:[UIImage imageNamed:@"image"]];
+        [facebookViewController setCompletionHandler:^(SLComposeViewControllerResult result){
+            switch (result) {
+                case SLComposeViewControllerResultCancelled:
+                    NSLog(@"Compose Result: Canelled");
+                    break;
+                case SLComposeViewControllerResultDone:
+                    NSLog(@"Compose Result: Done");
+                default:
+                    break;
+            }
+        }];
         [viewController presentViewController:facebookViewController animated:YES completion:nil];
     }
     else{
@@ -65,6 +76,17 @@
         [twitterViewController setInitialText:@"twitter"];
         [twitterViewController addURL:[NSURL URLWithString:@"https://twitter.com"]];
         [twitterViewController addImage:[UIImage imageNamed:@"image"]];
+        [twitterViewController setCompletionHandler:^(SLComposeViewControllerResult result){
+            switch (result) {
+                case SLComposeViewControllerResultCancelled:
+                    NSLog(@"Compose Result: Canelled");
+                    break;
+                case SLComposeViewControllerResultDone:
+                    NSLog(@"Compose Result: Done");
+                default:
+                    break;
+            }
+        }];
         [viewController presentViewController:twitterViewController animated:YES completion:nil];
     }
     else{

@@ -1,24 +1,25 @@
 #import "SettingController.h"
-
+#import "SettingCell.h"
+@interface SettingController ()<SettingCellDelegate>{
+@private
+    NSMutableArray *array;
+}
+@end
 @implementation SettingController
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [CTHSocial shareAppToFacebook:self];
-    [self loadData];
+    if(!array){
+        array = [[NSMutableArray alloc] initWithCapacity:0];
+    }
+    [array addObject:@"Login FaceBook"];
+    [array addObject:@"Login Twitter"];
+    [array addObject:@"share AppTo Facebook"];
+    [array addObject:@"share AppTo Twitter"];
+    [self.settingTableView reloadData];
 }
 -(void)viewDidDisappear:(BOOL)animated{
 }
--(void)loadData{
-    
-}
 
--(void)reloadTable{
-    [self performSelector:@selector(waitLoadData) withObject:nil afterDelay:0.01];
-}
--(void)waitLoadData{
-    [self doneLoadingTableViewData];
-    [self.tableView reloadData];
-}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -28,14 +29,33 @@
     return 1;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 1;
+    return [array count];
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    return nil;
+    SettingCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SettingCell"];
+    cell.delegate = self;
+    cell.tag = indexPath.row;
+    [cell setSetting:[array objectAtIndex:indexPath.row]];
+    return cell;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 100;
+    return 50;
 }
-
+-(void)actionSetting:(SettingCell *)cell{
+    switch (cell.tag){
+        case 0:
+            [CTHSocial loginFaceBook:self];
+            break;
+        case 1:
+            [CTHSocial loginTwitter:self];
+            break;
+        case 2:
+            [CTHSocial shareAppToFacebook:self];
+            break;
+        case 3:
+            [CTHSocial shareAppToTwitter:self];
+            break;
+    }
+    NSLog([NSString stringWithFormat:@"cell.tag: %d", cell.tag]);
+}
 @end

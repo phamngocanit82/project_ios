@@ -4,7 +4,7 @@
 @interface RefreshTableHeaderController : UIViewController<EGORefreshTableHeaderDelegate, LoadMoreTableFooterDelegate>
 @property (strong, nonatomic) EGORefreshTableHeaderView *egoRefreshTableHeaderView;
 @property (strong, nonatomic) LoadMoreTableFooterView *loadMoreTableFooterView;
-@property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (assign) BOOL reloading;
 @property (assign) BOOL isLoadMoreing;
 -(NSInteger)getStatusTable;
