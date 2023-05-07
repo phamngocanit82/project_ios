@@ -13,8 +13,8 @@
     }
     [array addObject:@"Login FaceBook"];
     [array addObject:@"Login Twitter"];
-    [array addObject:@"share AppTo Facebook"];
-    [array addObject:@"share AppTo Twitter"];
+    [array addObject:@"Share AppTo Facebook"];
+    [array addObject:@"Share AppTo Twitter"];
     [self.settingTableView reloadData];
 }
 -(void)viewDidDisappear:(BOOL)animated{

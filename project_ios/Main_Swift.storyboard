@@ -31,7 +31,7 @@
         <!--PopulationVC-->
         <scene sceneID="B5T-97-L59">
             <objects>
-                <viewController id="Ebg-kR-tVF" userLabel="PopulationVC" customClass="PopulationController" sceneMemberID="viewController">
+                <viewController id="Ebg-kR-tVF" userLabel="PopulationVC" customClass="SwiftPopulationController" customModule="project_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eLD-n8-2CH">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,16 +40,19 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="710"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PopulationCell" rowHeight="80" id="ZgT-ev-ecK" customClass="PopulationCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SwiftPopulationCell" rowHeight="80" id="ZgT-ev-ecK" customClass="SwiftPopulationCell" customModule="project_ios" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZgT-ev-ecK" id="qsf-cE-0ac">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBr-dh-VOW">
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBr-dh-VOW">
                                                     <rect key="frame" x="0.0" y="0.0" width="393" height="70"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="actionPopulation:" destination="ZgT-ev-ecK" eventType="touchUpInside" id="e4n-6v-FJ8"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gf-fy-hnn" customClass="CTHLabel">
                                                     <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="26"/>
@@ -166,18 +169,18 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <outlet property="id_nationLabel" destination="9gf-fy-hnn" id="Zg7-IW-Jkx"/>
-                                            <outlet property="id_yearLabel" destination="lTn-h8-MIC" id="YRx-yc-MRJ"/>
-                                            <outlet property="nationLabel" destination="VAm-Lg-eqe" id="B4A-PN-6Aq"/>
-                                            <outlet property="populationLabel" destination="kch-9M-wlc" id="Lt3-J4-9WN"/>
-                                            <outlet property="slug_nationLabel" destination="ZkK-Zn-KJg" id="O9e-Uw-Iyr"/>
-                                            <outlet property="yearLabel" destination="dO7-7o-Noj" id="NI0-gA-Of9"/>
+                                            <outlet property="id_nationLabel" destination="9gf-fy-hnn" id="YSe-ac-gV4"/>
+                                            <outlet property="id_yearLabel" destination="lTn-h8-MIC" id="uZ1-Ua-Wd6"/>
+                                            <outlet property="nationLabel" destination="VAm-Lg-eqe" id="ILY-70-b70"/>
+                                            <outlet property="populationLabel" destination="kch-9M-wlc" id="N2q-0A-KJo"/>
+                                            <outlet property="slug_nationLabel" destination="ZkK-Zn-KJg" id="9R7-ZG-JZ0"/>
+                                            <outlet property="yearLabel" destination="dO7-7o-Noj" id="weE-Cj-lyh"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="Ebg-kR-tVF" id="VoL-Vx-nn9"/>
-                                    <outlet property="delegate" destination="Ebg-kR-tVF" id="Ass-pS-Z13"/>
+                                    <outlet property="dataSource" destination="Ebg-kR-tVF" id="V0V-eV-t67"/>
+                                    <outlet property="delegate" destination="Ebg-kR-tVF" id="HUY-Jx-m9b"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -192,7 +195,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Population" id="V2A-1v-gkc"/>
                     <connections>
-                        <outlet property="tableView" destination="51c-mW-cBG" id="Y7W-Ny-9Ab"/>
+                        <outlet property="tableView" destination="51c-mW-cBG" id="e30-pi-Ywl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="inb-iN-XqY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -202,7 +205,7 @@
         <!--MapVC-->
         <scene sceneID="Yub-H2-OgN">
             <objects>
-                <viewController id="nG4-vx-atN" userLabel="MapVC" customClass="MapController" sceneMemberID="viewController">
+                <viewController id="nG4-vx-atN" userLabel="MapVC" customClass="SwiftMapController" customModule="project_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HfI-4Z-gnZ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -218,7 +221,7 @@
         <!--SettingVC-->
         <scene sceneID="fM0-Qw-lUN">
             <objects>
-                <viewController id="RhI-hV-tqD" userLabel="SettingVC" customClass="SettingController" sceneMemberID="viewController">
+                <viewController id="RhI-hV-tqD" userLabel="SettingVC" customClass="SwiftSettingController" customModule="project_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W8f-da-xGo">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -228,7 +231,7 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SettingCell" rowHeight="50" id="Z3g-1I-pfg" customClass="SettingCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SwiftSettingCell" rowHeight="50" id="Z3g-1I-pfg" customClass="SwiftSettingCell" customModule="project_ios" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Z3g-1I-pfg" id="ZCm-MZ-R94">
@@ -238,7 +241,7 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrJ-R9-deE">
                                                     <rect key="frame" x="0.0" y="0.0" width="393" height="48"/>
                                                     <connections>
-                                                        <action selector="actionSetting:" destination="Z3g-1I-pfg" eventType="touchUpInside" id="6uc-7p-04F"/>
+                                                        <action selector="actionSetting:" destination="Z3g-1I-pfg" eventType="touchUpInside" id="jxg-uu-v2C"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3i-La-Fll" customClass="CTHLabel">
@@ -278,13 +281,13 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <outlet property="settingLabel" destination="i3i-La-Fll" id="J8o-WA-SoD"/>
+                                            <outlet property="settingLabel" destination="i3i-La-Fll" id="k1W-Og-zbS"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="RhI-hV-tqD" id="0gO-2D-g9C"/>
-                                    <outlet property="delegate" destination="RhI-hV-tqD" id="NeW-sL-mt7"/>
+                                    <outlet property="dataSource" destination="RhI-hV-tqD" id="82k-oz-KU5"/>
+                                    <outlet property="delegate" destination="RhI-hV-tqD" id="F9r-SS-jAD"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -293,7 +296,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Setting" id="Q50-BS-Dn8"/>
                     <connections>
-                        <outlet property="settingTableView" destination="N9S-81-MmG" id="Tlw-Qh-dnf"/>
+                        <outlet property="tableView" destination="N9S-81-MmG" id="KsC-sZ-oTe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dbc-Ey-ply" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

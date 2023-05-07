@@ -83,6 +83,8 @@
 		0679FF5D29E39887008CCD4A /* project_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0679FF5C29E39887008CCD4A /* project_iosTests.swift */; };
 		0679FF6729E39887008CCD4A /* project_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0679FF6629E39887008CCD4A /* project_iosUITests.swift */; };
 		0679FF6929E39887008CCD4A /* project_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0679FF6829E39887008CCD4A /* project_iosUITestsLaunchTests.swift */; };
+		067C73FD2A0721E1002B904E /* SwiftPopulationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067C73FC2A0721E1002B904E /* SwiftPopulationCell.swift */; };
+		0680D39B2A07423500ACA684 /* SwiftSettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0680D39A2A07423500ACA684 /* SwiftSettingCell.swift */; };
 		06A80A8E29F6033A0074CDE5 /* PrevViewControllerSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A80A8C29F6033A0074CDE5 /* PrevViewControllerSegue.m */; };
 		06A80A9A29F607F70074CDE5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A80A9929F607F70074CDE5 /* ViewController.m */; };
 		06A80AA129F609240074CDE5 /* PopulationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A80A9B29F609230074CDE5 /* PopulationController.m */; };
@@ -99,6 +101,10 @@
 		06B7C5162A041DC900D0BCA9 /* Main_Swift.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B7C5142A041DC900D0BCA9 /* Main_Swift.storyboard */; };
 		06B968062A002FAD009A0360 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06B968052A002FAC009A0360 /* Social.framework */; };
 		06BDD1FD29F97650007651CB /* CTHDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06BDD1FC29F97650007651CB /* CTHDialog.xib */; };
+		06C038342A05E66000FBFC79 /* SwiftPopulationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C038332A05E66000FBFC79 /* SwiftPopulationController.swift */; };
+		06C038372A05EADB00FBFC79 /* SwiftSettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C038352A05EADB00FBFC79 /* SwiftSettingController.swift */; };
+		06C038382A05EADC00FBFC79 /* SwiftMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C038362A05EADB00FBFC79 /* SwiftMapController.swift */; };
+		06C0383B2A05EC1A00FBFC79 /* SwiftPopulationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C0383A2A05EC1A00FBFC79 /* SwiftPopulationModel.swift */; };
 		06C1B00429E8524200EE2CA2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C1B00329E8524200EE2CA2 /* CoreData.framework */; };
 		06C1B00629E8524A00EE2CA2 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C1B00529E8524A00EE2CA2 /* CoreMedia.framework */; };
 		06DC319129ECDD7400685EFF /* FrutigerLTStd-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 06DC318C29ECDD7400685EFF /* FrutigerLTStd-Black.ttf */; };
@@ -256,6 +262,8 @@
 		0679FF6229E39887008CCD4A /* project_iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = project_iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0679FF6629E39887008CCD4A /* project_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = project_iosUITests.swift; sourceTree = "<group>"; };
 		0679FF6829E39887008CCD4A /* project_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = project_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		067C73FC2A0721E1002B904E /* SwiftPopulationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftPopulationCell.swift; sourceTree = "<group>"; };
+		0680D39A2A07423500ACA684 /* SwiftSettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSettingCell.swift; sourceTree = "<group>"; };
 		06A80A8C29F6033A0074CDE5 /* PrevViewControllerSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrevViewControllerSegue.m; sourceTree = "<group>"; };
 		06A80A8D29F6033A0074CDE5 /* PrevViewControllerSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrevViewControllerSegue.h; sourceTree = "<group>"; };
 		06A80A9829F607F70074CDE5 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -283,6 +291,10 @@
 		06B7C5142A041DC900D0BCA9 /* Main_Swift.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main_Swift.storyboard; sourceTree = "<group>"; };
 		06B968052A002FAC009A0360 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		06BDD1FC29F97650007651CB /* CTHDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CTHDialog.xib; sourceTree = "<group>"; };
+		06C038332A05E66000FBFC79 /* SwiftPopulationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPopulationController.swift; sourceTree = "<group>"; };
+		06C038352A05EADB00FBFC79 /* SwiftSettingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSettingController.swift; sourceTree = "<group>"; };
+		06C038362A05EADB00FBFC79 /* SwiftMapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftMapController.swift; sourceTree = "<group>"; };
+		06C0383A2A05EC1A00FBFC79 /* SwiftPopulationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftPopulationModel.swift; sourceTree = "<group>"; };
 		06C1B00329E8524200EE2CA2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		06C1B00529E8524A00EE2CA2 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		06DC318C29ECDD7400685EFF /* FrutigerLTStd-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FrutigerLTStd-Black.ttf"; sourceTree = "<group>"; };
@@ -547,6 +559,7 @@
 		066C1CCB29EB90A90055D87F /* model */ = {
 			isa = PBXGroup;
 			children = (
+				06C038392A05EC0800FBFC79 /* items */,
 				066C1CCC29EB90A90055D87F /* LanguageService.swift */,
 				066C1CCD29EB90A90055D87F /* ConnectService.swift */,
 				066C1CCE29EB90A90055D87F /* SQLiteService.swift */,
@@ -559,6 +572,11 @@
 		066C1CD129EB90A90055D87F /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				06C038362A05EADB00FBFC79 /* SwiftMapController.swift */,
+				06C038352A05EADB00FBFC79 /* SwiftSettingController.swift */,
+				0680D39A2A07423500ACA684 /* SwiftSettingCell.swift */,
+				06C038332A05E66000FBFC79 /* SwiftPopulationController.swift */,
+				067C73FC2A0721E1002B904E /* SwiftPopulationCell.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -658,6 +676,14 @@
 				06B3988D2A0054D2006B62D1 /* BaseModel.m */,
 				06B398892A00539D006B62D1 /* PopulationModel.h */,
 				06B3988A2A00539D006B62D1 /* PopulationModel.m */,
+			);
+			path = items;
+			sourceTree = "<group>";
+		};
+		06C038392A05EC0800FBFC79 /* items */ = {
+			isa = PBXGroup;
+			children = (
+				06C0383A2A05EC1A00FBFC79 /* SwiftPopulationModel.swift */,
 			);
 			path = items;
 			sourceTree = "<group>";
@@ -943,6 +969,7 @@
 				066C1C4129EB8C4B0055D87F /* CTHSlider.m in Sources */,
 				06B398842A004E64006B62D1 /* PopulationCell.m in Sources */,
 				066C1C8129EB8CE40055D87F /* CTHUserDefined.m in Sources */,
+				06C038382A05EADC00FBFC79 /* SwiftMapController.swift in Sources */,
 				066C1CE729EB90A90055D87F /* SQLiteService.swift in Sources */,
 				066C1C7229EB8C830055D87F /* CTHHelper.m in Sources */,
 				06128FBD29F4C80C00F7F6F2 /* EGORefreshTableHeaderView.m in Sources */,
@@ -962,6 +989,7 @@
 				06B7C5122A0418A700D0BCA9 /* SettingCell.m in Sources */,
 				06A80AA329F609240074CDE5 /* MapController.m in Sources */,
 				066C1CA029EB8F2C0055D87F /* CTHDGActivityIndicator.m in Sources */,
+				0680D39B2A07423500ACA684 /* SwiftSettingCell.swift in Sources */,
 				06128FC029F4C82900F7F6F2 /* LoadMoreTableFooterView.m in Sources */,
 				06DC31A229ECE56100685EFF /* CTHBandHelper.m in Sources */,
 				066C1CB729EB90140055D87F /* CTHConnection.m in Sources */,
@@ -971,17 +999,21 @@
 				0633DC5D29E85CD300AD74F8 /* PDKeychainBindings.m in Sources */,
 				066C1C4529EB8C4B0055D87F /* CTHSlideIndicate.m in Sources */,
 				066C1CD929EB90A90055D87F /* UtilsCoreData.swift in Sources */,
+				06C038342A05E66000FBFC79 /* SwiftPopulationController.swift in Sources */,
 				066C1C4329EB8C4B0055D87F /* RadialGradientView.m in Sources */,
 				066C1CD629EB90A90055D87F /* UtilsAppSetting.swift in Sources */,
 				06128FB729F4C75600F7F6F2 /* ProcessKeyboardController.m in Sources */,
 				066C1C3F29EB8C4B0055D87F /* CTHSwitch.m in Sources */,
+				067C73FD2A0721E1002B904E /* SwiftPopulationCell.swift in Sources */,
 				066C1C4B29EB8C4B0055D87F /* CTHLineChart.m in Sources */,
 				066C1CE229EB90A90055D87F /* ExtensionString.swift in Sources */,
+				06C0383B2A05EC1A00FBFC79 /* SwiftPopulationModel.swift in Sources */,
 				06DC31A129ECE56100685EFF /* CTHBandC.m in Sources */,
 				06A8B34629FB00B8008AE17A /* CTHSocial.m in Sources */,
 				066C1C4429EB8C4B0055D87F /* CTHView.m in Sources */,
 				066C1C8429EB8D250055D87F /* CTHCache.m in Sources */,
 				06DC31A029ECE56100685EFF /* CTHBaseBand.m in Sources */,
+				06C038372A05EADB00FBFC79 /* SwiftSettingController.swift in Sources */,
 				066C1C8729EB8D5C0055D87F /* CTHJson.m in Sources */,
 				066C1C9929EB8EBC0055D87F /* CTHCamera.m in Sources */,
 				06DC319F29ECE56100685EFF /* CTHBandA.m in Sources */,

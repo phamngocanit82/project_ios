@@ -1,5 +1,6 @@
 import Foundation
 import FBSDKLoginKit
+import Social
 import TwitterKit
 struct UtilsSocial {
     static public func loginFacebook(_ viewController: UIViewController) {
@@ -45,5 +46,33 @@ struct UtilsSocial {
                 print("error: \(error!.localizedDescription)");
             }
         })*/
+    }
+    static public func shareAppToFacebook(_ viewController: UIViewController) {
+        if(SLComposeViewController.isAvailable(forServiceType: SLServiceTypeFacebook)){
+            let facebookViewController = SLComposeViewController(forServiceType:SLServiceTypeFacebook)
+            facebookViewController?.setInitialText("facebook")
+            facebookViewController?.add(URL(string:"https://facebook.com"))
+            facebookViewController?.add(UIImage(named: "image"))
+            facebookViewController?.completionHandler = { result in
+                if (result == SLComposeViewControllerResult.done) {
+                }else {
+                }
+            }
+            viewController.present(facebookViewController!, animated: true, completion: nil)
+        }
+    }
+    static public func shareAppToTwitter(_ viewController: UIViewController) {
+        if(SLComposeViewController.isAvailable(forServiceType: SLServiceTypeTwitter)){
+            let twitterViewController = SLComposeViewController(forServiceType:SLServiceTypeTwitter)
+            twitterViewController?.setInitialText("twitter")
+            twitterViewController?.add(URL(string:"https://twitter.com"))
+            twitterViewController?.add(UIImage(named: "image"))
+            twitterViewController?.completionHandler = { result in
+                if (result == SLComposeViewControllerResult.done) {
+                }else {
+                }
+            }
+            viewController.present(twitterViewController!, animated: true, completion: nil)
+        }
     }
 }

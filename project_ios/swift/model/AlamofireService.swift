@@ -220,6 +220,22 @@ class AlamofireService: NSObject {
                             case .success:
                                 do {
                                     let jsonResult = try JSONSerialization.jsonObject(with: response.data!, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSDictionary
+                                    _completeHandle(jsonResult, Global.API_CODE_SUCCESS, "")
+                                } catch {
+                                    _completeHandle (nil, Global.API_CODE_ERROR, "")
+                                }
+                                break
+                            case .failure:
+                                _completeHandle (nil, Global.API_CODE_ERROR, "")
+                                if (ignoreReturn) {
+                                    return
+                                }
+                                break
+                        }
+                        /*switch response.result {
+                            case .success:
+                                do {
+                                    let jsonResult = try JSONSerialization.jsonObject(with: response.data!, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSDictionary
                                     let returnCode: Int! = jsonResult.object(forKey: "status") as! Int
                                     switch returnCode {
                                     case Global.RETURN_CODE_SUCCESS:
@@ -254,7 +270,7 @@ class AlamofireService: NSObject {
                                     return
                                 }
                                 break
-                        }
+                        }*/
                     })
     }
 }
